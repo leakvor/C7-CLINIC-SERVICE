@@ -3,15 +3,16 @@
     height: 340px;
     background: gainsboro;
 
-    .card-footer {
+    .card-footer{
         display: flex;
         flex-direction: column;
         gap: 7px;
-        h5,p{
+        h5{
+            padding: 10px;
             text-align: center;
         }
         h5{
-            margin-top: 10px;
+
             color: blue;
         }
         p{

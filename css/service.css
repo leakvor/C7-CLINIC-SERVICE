@@ -1,5 +1,5 @@
 nav {
-  background: rgb(215, 219, 224);
+  background-color: rgb(153, 221, 221);
   display: flex;
   justify-content: space-between;
 }
@@ -11,7 +11,6 @@ nav {
   align-items: center;
   margin-left: 40px;
 }
-
 .nav-left img {
   height: 50px;
   margin-top: 15px;
@@ -24,16 +23,13 @@ nav {
   align-items: center;
   margin-right: 40px;
 }
-
 .nav-right ul {
   display: flex;
   gap: 40px;
 }
-
 .nav-right ul li {
   list-style: none;
 }
-
 .nav-right ul li a {
   text-decoration: none;
 }
@@ -54,7 +50,8 @@ nav {
   flex-direction: column;
   gap: 7px;
 }
-.card .card-footer h5, .card .card-footer p {
+.card .card-footer h5 {
+  padding: 10px;
   text-align: center;
 }
 .card .card-footer h5 {
@@ -67,34 +64,13 @@ nav {
 .container {
   display: flex;
   justify-content: center;
-  margin-top: 50px;
+  margin-top: 100px;
 }
 
 .container-card {
+  height: 130vh;
+  width: 80%;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  height: 130vh;
-  width: 80%;
-}
-
-.card {
-  width: 30%;
-  height: 340px;
-  background: gainsboro;
-}
-
-.card-footer {
-  display: flex;
-  flex-direction: column;
-  gap: 7px;
-}
-
-.card-footer > h5,
-.card-footer > p {
-  text-align: center;
-}
-
-.card-footer > h5 {
-  color: blue;
 }/*# sourceMappingURL=service.css.map */

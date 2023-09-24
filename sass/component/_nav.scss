@@ -1,5 +1,5 @@
 nav {
-    background: $main-color;
+    background-color: rgb(153, 221, 221);
     display: flex;
     justify-content: space-between;
 }
@@ -10,14 +10,12 @@ nav {
     justify-content: start;
     align-items: center;
     margin-left: 40px;
-
     img {
         height: 50px;
         margin-top: 15px;
     }
 
 }
-
 
 .nav-right {
     flex: 1;
