@@ -62,4 +62,39 @@ nav {
 }
 .card .card-footer p {
   font-size: 13px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.container-card {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  height: 130vh;
+  width: 80%;
+}
+
+.card {
+  width: 30%;
+  height: 340px;
+  background: gainsboro;
+}
+
+.card-footer {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.card-footer > h5,
+.card-footer > p {
+  text-align: center;
+}
+
+.card-footer > h5 {
+  color: blue;
 }/*# sourceMappingURL=service.css.map */
