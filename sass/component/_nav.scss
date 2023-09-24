@@ -1,4 +1,35 @@
 nav{
+    background: rgb(215, 219, 224);
     display: flex;
-    background: #000;
+    justify-content: space-between;
+}
+.nav-left{
+    flex: 1;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-left: 40px;
+
+}
+.nav-left img{
+    height: 50px;
+    margin-top: 15px;
+}
+.nav-right{
+    flex: 1;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin-right: 40px;
+}
+.nav-right ul{
+    display: flex;
+    gap: 40px;
+}
+.nav-right ul li{
+    list-style: none;
+    
+}
+.nav-right ul li a {
+    text-decoration: none;
 }
