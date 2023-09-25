@@ -1,5 +1,5 @@
 nav {
-  background-color: rgb(153, 221, 221);
+  background-color: rgb(171, 215, 239);
   display: flex;
   justify-content: space-between;
 }
@@ -38,11 +38,25 @@ nav {
   padding: 0;
   margin: 0;
   list-style-type: none;
+  font-family: sans-serif;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.container-card {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .card {
   width: 30%;
   height: 340px;
+  margin-top: 50px;
   background: gainsboro;
 }
 .card .card-footer {
@@ -54,14 +68,12 @@ nav {
   margin-top: 15px;
   text-align: center;
 }
-.card .card-footer p {
-  text-align: center;
-}
 .card .card-footer h5 {
   color: blue;
 }
 .card .card-footer p {
   font-size: 13px;
+  text-align: center;
 }
 
 .container {
