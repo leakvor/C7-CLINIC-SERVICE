@@ -1,3 +1,12 @@
 @import './main.scss';
 @import './component/whyTheyChooseUs';
 @import './component/ourDoctor';
+@import './component/MakeAppointment';
+
+.location h1{
+    margin-top: 50px;
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+
