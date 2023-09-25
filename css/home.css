@@ -155,6 +155,9 @@ footer .main-footer .footer-right .footer-item {
 .our-doctor .container .card-header {
   width: 270px;
   height: 170px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .our-doctor .container .card-header img {
@@ -169,6 +172,7 @@ footer .main-footer .footer-right .footer-item {
   justify-content: center;
   align-items: center;
   border-radius: 10px;
+  gap: 10px;
 }
 
 .contact-us .container .form-container {
