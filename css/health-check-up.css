@@ -51,7 +51,10 @@ nav {
   gap: 7px;
 }
 .card .card-footer h5 {
-  padding: 10px;
+  margin-top: 15px;
+  text-align: center;
+}
+.card .card-footer p {
   text-align: center;
 }
 .card .card-footer h5 {
