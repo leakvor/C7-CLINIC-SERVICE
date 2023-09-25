@@ -1,35 +1,39 @@
-nav{
-    background: rgb(215, 219, 224);
+nav {
+    background-color: rgb(171, 215, 239);
     display: flex;
     justify-content: space-between;
 }
-.nav-left{
+
+.nav-left {
     flex: 1;
     display: flex;
     justify-content: start;
     align-items: center;
     margin-left: 40px;
+    img {
+        height: 50px;
+        margin-top: 15px;
+    }
 
 }
-.nav-left img{
-    height: 50px;
-    margin-top: 15px;
-}
-.nav-right{
+
+.nav-right {
     flex: 1;
     display: flex;
     justify-content: end;
     align-items: center;
     margin-right: 40px;
-}
-.nav-right ul{
-    display: flex;
-    gap: 40px;
-}
-.nav-right ul li{
-    list-style: none;
-    
-}
-.nav-right ul li a {
-    text-decoration: none;
+
+    ul {
+        display: flex;
+        gap: 40px;
+
+        li {
+            list-style: none;
+
+            a {
+                text-decoration: none;
+            }
+        }
+    }
 }
