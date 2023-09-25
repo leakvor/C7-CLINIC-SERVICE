@@ -67,6 +67,7 @@ nav {
 .card .card-footer h5 {
   margin-top: 15px;
   text-align: center;
+  text-transform: uppercase;
 }
 .card .card-footer h5 {
   color: blue;
