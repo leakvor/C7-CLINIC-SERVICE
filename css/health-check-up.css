@@ -107,6 +107,7 @@ footer .main-footer .footer-right .footer-item {
   width: 30%;
   height: 340px;
   margin-top: 50px;
+  margin-bottom: 50px;
   background: gainsboro;
 }
 .card .card-footer {
