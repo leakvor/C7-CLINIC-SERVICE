@@ -4,20 +4,17 @@
 }
 .container-card{
     width: 80%;
-    display: flex;
-    justify-content: space-between;
+    @include between;
     flex-wrap: wrap;
 }
 .card {
     width: 30%;
     height: 340px;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    @include margin;
     background: gainsboro;
 
     .card-footer{
-        display: flex;
-        flex-direction: column;
+        @include column;
         gap: 7px;
         h5{
             margin-top: 15px;

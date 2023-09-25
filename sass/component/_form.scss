@@ -1,33 +1,35 @@
+.contact-us {
+    .container {
+        .form-container {
+            width: 400px;
+            height: 350px;
+            background: #a8a2a277;
+            @include centered;
+            flex-direction: column;
+            border-radius: $borderRadius;
+            border: 2px solid rgb(70, 68, 68);
 
-.contact-us .container .form-container{
-    width: 400px;
-    height: 350px;
-    background: #a8a2a277;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    border-radius: 10px;
-    border: 2px solid rgb(70, 68, 68);
-}
-.contact-us .container .form-container form{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-.contact-us .container .form-container form input{
-    margin-top: 25px;
-    padding: 10px;
-    width: 150%;
-    border-radius: 5px;
-    border: none;
-}
-.contact-us .container .form-container button{
-    width: 100px;
-    padding: 10px;
-    margin-top: 25px;
-    border-radius: 10px;
-    border: none;
-    background: rgb(90, 202, 240);
+            form {
+                @include centered;
+                flex-direction: column;
+
+                input {
+                    margin-top: 25px;
+                    padding: 10px;
+                    width: 150%;
+                    border-radius: 5px;
+                    border: none;
+                }
+            }
+
+            button {
+                width: 100px;
+                padding: 10px;
+                margin-top: 25px;
+                border-radius: 10px;
+                border: none;
+                background: rgb(90, 202, 240);
+            }
+        }
+    }
 }
