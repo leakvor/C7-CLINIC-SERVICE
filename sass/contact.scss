@@ -1,0 +1,13 @@
+@import "./main.scss";
+@import "./component/MakeAppointment";
+@import "./component/location";
+.working-hour{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 90px;
+    margin-right: 70px;
+}
+.working-hour h1{
+    text-align: center;
+    margin-bottom: 50px;
+}
