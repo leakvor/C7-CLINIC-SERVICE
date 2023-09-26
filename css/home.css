@@ -85,6 +85,83 @@ footer .main-footer .footer-right .footer-item {
   font-family: sans-serif;
 }
 
+.why-they-choose-us {
+  height: 270px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.why-they-choose-us h1 {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.why-they-choose-us .card-container {
+  display: flex;
+  gap: 40px;
+}
+
+.why-they-choose-us .card-container .card {
+  width: 270px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.why-they-choose-us .card-container .card p {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.our-doctor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+.our-doctor h1 {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.our-doctor .container-buntton {
+  display: flex;
+  justify-content: end;
+  margin-right: 180px;
+  width: 100%;
+  margin-bottom: 50px;
+}
+.our-doctor .container {
+  display: flex;
+  gap: 40px;
+}
+.our-doctor .container .card {
+  height: 270px;
+}
+.our-doctor .container .card .card-header {
+  width: 270px;
+  height: 170px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.our-doctor .container .card .card-header img {
+  height: 170px;
+}
+.our-doctor .container .card .card-footer {
+  background: rgb(171, 215, 239);
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 10px;
+  gap: 10px;
+}
+
 .contact-us {
   display: flex;
   flex-direction: column;
@@ -152,15 +229,4 @@ footer .main-footer .footer-right .footer-item {
   margin-top: 50px;
   margin-bottom: 60px;
   text-align: center;
-}
-
-.working-hour {
-  margin-top: 50px;
-  margin-bottom: 50px;
-  margin-left: 90px;
-  margin-right: 70px;
-}
-.working-hour h1 {
-  text-align: center;
-  margin-bottom: 50px;
-}/*# sourceMappingURL=contact.css.map */
+}/*# sourceMappingURL=home.css.map */

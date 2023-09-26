@@ -85,82 +85,39 @@ footer .main-footer .footer-right .footer-item {
   font-family: sans-serif;
 }
 
-.contact-us {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.contact-us h1 {
-  margin-top: 30px;
-  margin-bottom: 50px;
-}
-.contact-us h1 .check-schedule {
-  width: 100%;
-  height: 475px;
-  background-image: url(/image/form.jpg);
-}
-.contact-us h1 .check-schedule .container {
-  display: flex;
-  flex-direction: column;
-  align-items: end;
-  margin-right: 80px;
-}
-.contact-us h1 .check-schedule button {
-  width: 150px;
-  padding: 10px;
-  margin-top: 30px;
-  margin-left: 70px;
-  border-radius: 10px;
-  border: none;
-  background: blue;
-  color: white;
-}
-.contact-us .container .form-container {
-  width: 400px;
-  height: 350px;
-  background: rgba(168, 162, 162, 0.4666666667);
+.container {
   display: flex;
   justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  border-radius: 10px;
-  border: 2px solid rgb(70, 68, 68);
 }
-.contact-us .container .form-container form {
+
+.container-card {
+  width: 80%;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 30%;
+  height: 340px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  background: gainsboro;
+}
+.card .card-footer {
+  display: flex;
   flex-direction: column;
+  gap: 7px;
 }
-.contact-us .container .form-container form input {
-  margin-top: 25px;
-  padding: 10px;
-  width: 150%;
-  border-radius: 5px;
-  border: none;
-}
-.contact-us .container .form-container button {
-  width: 100px;
-  padding: 10px;
-  margin-top: 25px;
-  border-radius: 10px;
-  border: none;
-  background: rgb(90, 202, 240);
-}
-
-.location h1 {
-  margin-top: 50px;
-  margin-bottom: 60px;
+.card .card-footer h5 {
+  margin-top: 15px;
   text-align: center;
+  text-transform: uppercase;
 }
-
-.working-hour {
-  margin-top: 50px;
-  margin-bottom: 50px;
-  margin-left: 90px;
-  margin-right: 70px;
+.card .card-footer h5 {
+  color: blue;
 }
-.working-hour h1 {
+.card .card-footer p {
+  font-size: 13px;
   text-align: center;
-  margin-bottom: 50px;
-}/*# sourceMappingURL=contact.css.map */
+}/*# sourceMappingURL=service.css.map */
