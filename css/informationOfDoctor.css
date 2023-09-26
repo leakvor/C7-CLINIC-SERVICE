@@ -12,7 +12,7 @@ nav {
   margin-left: 40px;
 }
 .nav-left img {
-  height: 50px;
+  height: 60px;
   margin-top: 15px;
 }
 
@@ -35,47 +35,71 @@ nav {
 }
 
 footer {
-  height: 250px;
-  background: rgb(192, 225, 255);
-  margin-top: -4px;
-  display: flex;
-  align-items: center;
+  background: skyblue;
+  height: 320px;
+  margin-top: -5PX;
 }
-footer .main-footer {
+footer .footer-container {
+  margin-left: 50px;
+  margin-right: 50px;
+  height: 100%;
   display: flex;
   justify-content: space-between;
-  margin-left: 90px;
+  align-items: center;
+  gap: 50px;
 }
-footer .main-footer .footer-left {
-  flex: 1;
+footer .footer-container .footer-left img {
+  width: 200px;
+  margin-bottom: 110px;
+}
+footer .footer-container .footer-center {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  width: 350px;
+  margin: 10px 15px;
+  line-height: 45px;
 }
-footer .main-footer .footer-center {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-  margin-top: -25px;
+footer .footer-container .footer-center .footer-center-header {
+  height: 55px;
 }
-footer .main-footer .footer-center ul li {
+footer .footer-container .footer-center .footer-center-footer ul li {
   list-style: none;
-  margin-top: 20px;
 }
-footer .main-footer .footer-center ul li a {
+footer .footer-container .footer-center .footer-center-footer ul li a {
   text-decoration: none;
 }
-footer .main-footer .footer-right {
-  flex: 1;
+footer .footer-container .footer-right {
+  width: 380px;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
 }
-footer .main-footer .footer-right .footer-item {
+footer .footer-container .footer-right .contact-footer {
   display: flex;
   align-items: center;
-  gap: 20px;
-  margin-top: 20px;
+}
+footer .footer-container .footer-right .contact-footer i {
+  color: blue;
+  font-size: 25px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 42px;
+  margin: 10px 15px;
+}
+footer .footer-container .footer-right .contact-footer i .fa-map-marker {
+  font-size: 25px;
+  width: 80px;
+  height: 20px;
+  border-radius: 50%;
+}
+footer .footer-container .footer-right .contact-footer i .fa-telegram {
+  line-height: 40px;
+  font-size: 27px;
+}
+footer .footer-container .footer-right .contact-footer i .fa-envelope {
+  font-size: 10px;
+  line-height: 38px;
 }
 
 * {
@@ -87,83 +111,69 @@ footer .main-footer .footer-right .footer-item {
 
 .container {
   display: flex;
-  justify-content: center;
   flex-direction: column;
+  justify-content: center;
   margin-top: 40px;
 }
-
-.container > h3 {
+.container h3 {
   text-align: center;
 }
-
-/* container-img */
-.InformationOfdoctor {
+.container .InformationOfdoctor {
   display: flex;
   justify-content: center;
   margin-top: 50px;
 }
-
-.backgroundOfDoctor {
+.container .InformationOfdoctor .backgroundOfDoctor {
   display: flex;
   justify-content: center;
   width: 80%;
   height: 400px;
 }
-
-.imgeOfDoctor {
+.container .InformationOfdoctor .backgroundOfDoctor img {
   display: flex;
   justify-content: center;
   align-items: center;
   flex: 1;
 }
-
-.textOfbackground {
+.container .InformationOfdoctor .backgroundOfDoctor .textOfbackground {
   display: flex;
-  justify-content: center;
   flex-direction: column;
+  justify-content: center;
   flex: 1;
 }
-
-.textOfbackground > p {
+.container .InformationOfdoctor .backgroundOfDoctor .textOfbackground p {
   margin-top: 10px;
 }
-
-/* card */
-.circleImgaeofDoctor {
+.container .circleImgaeofDoctor {
   display: flex;
   justify-content: center;
   height: 400px;
   margin-top: 80px;
 }
-
-.card-image {
+.container .circleImgaeofDoctor .card-image {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 80%;
   height: 390px;
 }
-
-.card-image-header {
+.container .circleImgaeofDoctor .card-image .card-image-header {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   flex: 1;
-  flex-direction: column;
   height: 380px;
 }
-
-.card-image-header > img {
+.container .circleImgaeofDoctor .card-image .card-image-header img {
   width: 77%;
   height: 300px;
   margin-left: 33px;
   border-radius: 50%;
 }
-
-.contentOfDoctor > h5 {
+.container .circleImgaeofDoctor .card-image .card-image-header .contentOfDoctor h5 {
   margin-top: 20px;
+  text-align: center;
 }
-
-.contentOfDoctor h5,
-.contentOfDoctor p {
+.container .circleImgaeofDoctor .card-image .card-image-header .contentOfDoctor p {
   text-align: center;
 }/*# sourceMappingURL=informationOfDoctor.css.map */

@@ -1,0 +1,66 @@
+@import '../component/variable';
+@import '../component/group-mxin';
+.container {
+    @include column;
+    justify-content: center;
+    margin-top: 40px;
+    h3 {
+        text-align: center;
+    }
+    .InformationOfdoctor {
+        display: flex;
+        justify-content: center;
+        margin-top: 50px;
+        .backgroundOfDoctor {
+            display: flex;
+            justify-content: center;
+            width: 80%;
+            height: 400px;
+            img {
+                @include centered;
+                flex: 1;
+            }
+            .textOfbackground {
+                @include column;
+                justify-content: center;
+                flex: 1;
+                p {
+                    margin-top: 10px;
+                }
+            }
+        }
+    }
+    .circleImgaeofDoctor {
+        display: flex;
+        justify-content: center;
+        height: 400px;
+        margin-top: 80px;
+        .card-image {
+            @include centered;
+            width: 80%;
+            height: 390px;
+            .card-image-header {
+                @include column;
+                justify-content: center;
+                flex: 1;
+                height: 380px;
+                img {
+                    width: 77%;
+                    height: 300px;
+                    margin-left: 33px;
+                    border-radius: 50%;
+                }
+                .contentOfDoctor {
+                    h5 {
+                        margin-top: 20px;
+                        text-align: center;
+                    }
+
+                    p {
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+}

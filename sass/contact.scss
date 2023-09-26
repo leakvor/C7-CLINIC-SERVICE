@@ -1,13 +1,13 @@
 @import "./main.scss";
-@import "./component/MakeAppointment";
+@import './content/MakeAppointment';
 @import "./component/location";
 
 .working-hour {
     @include margin;
 
     margin: {
-        left: 90px;
-        right: 70px;
+        left: 65px;
+        right:$mainMargin;
     };
     h1 {
         text-align: center;
