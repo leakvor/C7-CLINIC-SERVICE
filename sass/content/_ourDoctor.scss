@@ -1,5 +1,5 @@
-@import './variable';
-@import './group-mxin';
+@import '../component/variable';
+@import '../component/group-mxin';
 .our-doctor {
     @include column;
     align-items: center;

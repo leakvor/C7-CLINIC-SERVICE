@@ -8,12 +8,13 @@
     width: 80%;
     @include between;
     flex-wrap: wrap;
+    margin-bottom: $mainMargin;
 }
 .card {
     width: 30%;
     height: 340px;
-    @include margin;
-    background: gainsboro;
+    margin-top: $mainMargin;
+    background: $primaryColor;
 
     .card-footer{
         @include column;
@@ -22,10 +23,7 @@
             margin-top: 15px;
             text-align: center;
             text-transform: uppercase;
-        }
-        h5{
-
-            color: blue;
+            color: $seconaryColor;
         }
         p{
             font-size: 13px;
