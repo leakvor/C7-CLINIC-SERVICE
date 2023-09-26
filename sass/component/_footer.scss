@@ -1,5 +1,6 @@
 @import './variable';
 @import './group-mxin';
+@import '../mixins/responsive';
 footer {
     height: 250px;
     background: rgb(192, 225, 255);

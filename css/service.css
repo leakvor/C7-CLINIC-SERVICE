@@ -102,7 +102,23 @@ footer .main-footer .footer-right .footer-item {
   width: 30%;
   height: 340px;
   margin-top: 50px;
-  background: gainsboro;
+  background: rgba(192, 190, 190, 0.943);
+}
+@media screen and (max-width: 1200px) {
+  .card {
+    width: 32%;
+  }
+}
+@media screen and (max-width: 992px) {
+  .card {
+    width: 48%;
+    height: 320px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .card {
+    width: 98%;
+  }
 }
 .card .card-footer {
   display: flex;
@@ -116,6 +132,16 @@ footer .main-footer .footer-right .footer-item {
   color: blue;
 }
 .card .card-footer p {
-  font-size: 13px;
+  font-size: 12px;
   text-align: center;
+}
+@media screen and (max-width: 992px) {
+  .card .card-footer p {
+    font-size: 10px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .card .card-footer p {
+    font-size: 9px;
+  }
 }/*# sourceMappingURL=service.css.map */

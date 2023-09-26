@@ -1,5 +1,6 @@
 @import './variable';
 @import './group-mxin';
+@import '../mixins/responsive';
 .container{
     display: flex;
     justify-content: center;
@@ -15,6 +16,16 @@
     height: 340px;
     margin-top: $mainMargin;
     background: $primaryColor;
+    @include responsive(xl){
+        width: 32%;
+    }
+    @include responsive(lg){
+        width: 48%;
+        height: 320px;
+    }
+    @include responsive(md){
+        width: 98%;
+    }
 
     .card-footer{
         @include column;
@@ -26,7 +37,13 @@
             color: $seconaryColor;
         }
         p{
-            font-size: 13px;
+            @include responsive(lg){
+                font-size: 10px;
+            }
+            @include responsive(md){
+                font-size: 9px;
+            }
+            font-size: 12px;
             text-align: center;
         }
     }
