@@ -12,7 +12,7 @@ nav {
   margin-left: 40px;
 }
 .nav-left img {
-  height: 50px;
+  height: 60px;
   margin-top: 15px;
 }
 
@@ -37,10 +37,11 @@ nav {
 footer {
   background: skyblue;
   height: 320px;
+  margin-top: -5PX;
 }
 footer .footer-container {
-  margin-top: 50px;
-  margin-bottom: 50px;
+  margin-left: 50px;
+  margin-right: 50px;
   height: 100%;
   display: flex;
   justify-content: space-between;
@@ -79,11 +80,8 @@ footer .footer-container .footer-right .contact-footer {
   align-items: center;
 }
 footer .footer-container .footer-right .contact-footer i {
-  background-color: blue;
-  color: gainsboro;
+  color: blue;
   font-size: 25px;
-  width: 38px;
-  height: 38px;
   border-radius: 50%;
   text-align: center;
   line-height: 42px;
@@ -100,7 +98,7 @@ footer .footer-container .footer-right .contact-footer i .fa-telegram {
   font-size: 27px;
 }
 footer .footer-container .footer-right .contact-footer i .fa-envelope {
-  font-size: 15px;
+  font-size: 10px;
   line-height: 38px;
 }
 
@@ -203,7 +201,7 @@ footer .footer-container .footer-right .contact-footer i .fa-envelope {
   display: flex;
   flex-direction: column;
   align-items: end;
-  margin-right: 50px;
+  margin-right: 80px;
 }
 .contact-us .check-schedule .container .form-container {
   width: 400px;
