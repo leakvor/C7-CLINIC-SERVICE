@@ -95,13 +95,13 @@ footer .main-footer .footer-right .footer-item {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  margin-bottom: 50px;
 }
 
 .card {
   width: 30%;
   height: 340px;
   margin-top: 50px;
-  margin-bottom: 50px;
   background: gainsboro;
 }
 .card .card-footer {
@@ -113,8 +113,6 @@ footer .main-footer .footer-right .footer-item {
   margin-top: 15px;
   text-align: center;
   text-transform: uppercase;
-}
-.card .card-footer h5 {
   color: blue;
 }
 .card .card-footer p {
