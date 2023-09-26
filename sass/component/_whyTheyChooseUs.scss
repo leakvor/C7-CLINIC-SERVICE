@@ -1,30 +1,39 @@
 @import './variable';
 @import './group-mxin';
-.why-they-choose-us{
+
+.why-they-choose-us {
     height: 270px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-left: 50px;
-    margin-right: 50px;
-}
-.why-they-choose-us h1{
-    margin-top: 50px;
-    margin-bottom: 50px;
-}
-.why-they-choose-us .card-container{
-    display: flex;
-    gap: 40px;
-    
-}
-.why-they-choose-us .card-container .card{
-    width: 270px;
-    display: flex;
-    flex-direction: column;
+    @include column;
     align-items: center;
 
+    margin: {
+        left: $mainMargin;
+        right: $mainMargin;
+    };
+    h1 {
+        @include margin;
+    }
+    .card-container {
+        display: flex;
+        gap: 40px;
+        .card {
+            width: 270px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            p {
+                margin-top: 20px;
+                text-align: center;
+            }
+        }
+    
+    }
+
 }
-.why-they-choose-us .card-container .card p{
-    margin-top: 20px;
-    text-align: center;
-}
+
+
+
+
+
+
+
