@@ -87,83 +87,69 @@ footer .main-footer .footer-right .footer-item {
 
 .container {
   display: flex;
-  justify-content: center;
   flex-direction: column;
+  justify-content: center;
   margin-top: 40px;
 }
-
-.container > h3 {
+.container h3 {
   text-align: center;
 }
-
-/* container-img */
-.InformationOfdoctor {
+.container .InformationOfdoctor {
   display: flex;
   justify-content: center;
   margin-top: 50px;
 }
-
-.backgroundOfDoctor {
+.container .InformationOfdoctor .backgroundOfDoctor {
   display: flex;
   justify-content: center;
   width: 80%;
   height: 400px;
 }
-
-.imgeOfDoctor {
+.container .InformationOfdoctor .backgroundOfDoctor img {
   display: flex;
   justify-content: center;
   align-items: center;
   flex: 1;
 }
-
-.textOfbackground {
+.container .InformationOfdoctor .backgroundOfDoctor .textOfbackground {
   display: flex;
-  justify-content: center;
   flex-direction: column;
+  justify-content: center;
   flex: 1;
 }
-
-.textOfbackground > p {
+.container .InformationOfdoctor .backgroundOfDoctor .textOfbackground p {
   margin-top: 10px;
 }
-
-/* card */
-.circleImgaeofDoctor {
+.container .circleImgaeofDoctor {
   display: flex;
   justify-content: center;
   height: 400px;
   margin-top: 80px;
 }
-
-.card-image {
+.container .circleImgaeofDoctor .card-image {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 80%;
   height: 390px;
 }
-
-.card-image-header {
+.container .circleImgaeofDoctor .card-image .card-image-header {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   flex: 1;
-  flex-direction: column;
   height: 380px;
 }
-
-.card-image-header > img {
+.container .circleImgaeofDoctor .card-image .card-image-header img {
   width: 77%;
   height: 300px;
   margin-left: 33px;
   border-radius: 50%;
 }
-
-.contentOfDoctor > h5 {
+.container .circleImgaeofDoctor .card-image .card-image-header .contentOfDoctor h5 {
   margin-top: 20px;
+  text-align: center;
 }
-
-.contentOfDoctor h5,
-.contentOfDoctor p {
+.container .circleImgaeofDoctor .card-image .card-image-header .contentOfDoctor p {
   text-align: center;
 }/*# sourceMappingURL=informationOfDoctor.css.map */
