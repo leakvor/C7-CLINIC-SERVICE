@@ -1,51 +1,75 @@
 @import './variable';
 @import './group-mxin';
 footer {
-    height: 250px;
-    background: rgb(192, 225, 255);
-    margin-top: -4px;
-    display: flex;
-    align-items: center;
-
-    .main-footer {
+    background: skyblue;
+    height: 320px;
+    .footer-container {
+        @include margin;
+        height: 100%;
         @include between;
-        margin-left: 90px;
+        align-items: center;
+        gap: 50px;
 
-        .footer-left {
-            flex: 1;
-            display: flex;
-            justify-content: center;
+        .footer-left{
+            img {
+                width: 200px;
+                margin-bottom: 110px;
+            }
         }
-
         .footer-center {
-            flex: 1;
-            display: flex;
-            justify-content: center;
-            margin-top: -25px;
-
-            ul {
-                li {
-                    list-style: none;
-                    margin-top: 20px;
-
-                    a {
-                        text-decoration: none;
+            @include column;
+            text-align: center;
+            width: 350px;
+            margin: 10px 15px;
+            line-height: 45px;
+            .footer-center-header {
+                height: 55px;
+            }
+            .footer-center-footer {
+                ul{
+                    li {
+                        list-style: none;
+                        a {
+                            text-decoration: none;
+                        }
                     }
                 }
             }
         }
-
         .footer-right {
-            flex: 1;
+            width: 380px;
             @include centered;
-            flex-direction: column;
-            .footer-item {
+            .contact-footer {
                 display: flex;
                 align-items: center;
-                gap: 20px;
-                margin-top: 20px;
-
+                i {
+                    background-color:$seconaryColor;
+                    color: $primaryColor;
+                    font-size: 25px;
+                    width: 38px;
+                    height: 38px;
+                    border-radius: 50%;
+                    text-align: center;
+                    line-height: 42px;
+                    margin: 10px 15px;
+                    .fa-map-marker {
+                        font-size: 25px;
+                        width: 80px;
+                        height: 20px;
+                        border-radius: 50%;
+                    }
+                    .fa-telegram {
+                        line-height: 40px;
+                        font-size: 27px;
+                    }
+                    .fa-envelope {
+                        font-size: 15px;
+                        line-height: 38px;
+                    }
+                }
             }
-        }
+        }   
     }
 }
+
+   
