@@ -196,4 +196,12 @@ footer .footer-container .footer-right .contact-footer i .fa-envelope {
   text-align: center;
   margin-bottom: 50px;
   color: blue;
+}
+.working-hour p, .working-hour li {
+  font-size: 20px;
+}
+@media screen and (max-width: 768px) {
+  .working-hour p, .working-hour li {
+    font-size: 13px;
+  }
 }/*# sourceMappingURL=contact.css.map */

@@ -12,11 +12,17 @@
         color: $seconaryColor;
     }
     .container-buntton {
+        @include responsive(xl){
+            flex-direction: row,
+        }
         display: flex;
         justify-content: end;
         margin-right: 180px;
         width: 100%;
         margin-bottom: 50px;
+        @include responsive(xl){
+            justify-content: center;
+        }
         @include responsive(md){
             display: none;
         }
@@ -25,7 +31,10 @@
         display: flex;
         gap: 40px;
         @include responsive(xl){
+            gap: 50px;
             flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
         }
         .card {
             height: 270px;
