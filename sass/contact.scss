@@ -6,8 +6,8 @@
     @include margin;
 
     margin: {
-        left: 90px;
-        right: 70px;
+        left: 65px;
+        right:$mainMargin;
     };
     h1 {
         text-align: center;
