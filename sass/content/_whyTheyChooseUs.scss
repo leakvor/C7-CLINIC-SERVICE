@@ -12,6 +12,7 @@
     h1 {
         @include margin;
         color: $seconaryColor;
+        
     }
     .card-container {
         @include responsive(md){
@@ -25,9 +26,6 @@
             align-items: center;
             @include responsive(md){
                 width: 45%;
-                // flex-direction: column;
-                // justify-content: center;
-                // align-items: center;
             }
             @include responsive(sm){
                 width: 97%;

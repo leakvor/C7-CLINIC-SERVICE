@@ -36,7 +36,6 @@ nav {
 
 footer {
   background: skyblue;
-  height: 320px;
   margin-top: -5PX;
 }
 footer .footer-container {
@@ -45,34 +44,51 @@ footer .footer-container {
   height: 100%;
   display: flex;
   justify-content: space-between;
-  align-items: center;
   gap: 50px;
 }
+@media screen and (max-width: 1200px) {
+  footer .footer-container {
+    gap: 30px;
+  }
+}
+@media screen and (max-width: 768px) {
+  footer .footer-container {
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+}
 footer .footer-container .footer-left {
-  width: 350px;
+  width: 380px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+@media screen and (max-width: 1200px) {
+  footer .footer-container .footer-left {
+    width: 300px;
+  }
+}
+@media screen and (max-width: 768px) {
+  footer .footer-container .footer-left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 0px;
+  }
 }
 footer .footer-container .footer-left img {
   width: 200px;
   margin-bottom: 110px;
 }
-footer .footer-container .footer-center {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  width: 350px;
-  margin: 10px 15px;
-  line-height: 45px;
-}
-footer .footer-container .footer-center .footer-center-header {
-  height: 55px;
-}
-footer .footer-container .footer-center .footer-center-footer ul li {
-  list-style: none;
-}
-footer .footer-container .footer-center .footer-center-footer ul li a {
-  text-decoration: none;
+@media screen and (max-width: 768px) {
+  footer .footer-container .footer-left img {
+    margin-bottom: 0px;
+  }
 }
 footer .footer-container .footer-right {
+  margin-top: 50px;
+  margin-bottom: 50px;
   width: 380px;
   display: flex;
   justify-content: center;
@@ -84,25 +100,15 @@ footer .footer-container .footer-right .contact-footer {
 }
 footer .footer-container .footer-right .contact-footer i {
   color: blue;
-  font-size: 25px;
-  border-radius: 50%;
+  font-size: 28px;
   text-align: center;
   line-height: 42px;
   margin: 10px 15px;
 }
-footer .footer-container .footer-right .contact-footer i .fa-map-marker {
-  font-size: 25px;
-  width: 80px;
-  height: 20px;
-  border-radius: 50%;
-}
-footer .footer-container .footer-right .contact-footer i .fa-telegram {
-  line-height: 40px;
-  font-size: 27px;
-}
-footer .footer-container .footer-right .contact-footer i .fa-envelope {
-  font-size: 10px;
-  line-height: 38px;
+@media screen and (max-width: 768px) {
+  footer .footer-container .footer-right {
+    margin-top: 0px;
+  }
 }
 
 * {
@@ -122,6 +128,11 @@ footer .footer-container .footer-right .contact-footer i .fa-envelope {
   margin-bottom: 50px;
   color: blue;
 }
+@media screen and (max-width: 768px) {
+  .contact-us h1 {
+    margin-top: 100px;
+  }
+}
 .contact-us .check-schedule {
   width: 100%;
   height: 475px;
@@ -132,7 +143,13 @@ footer .footer-container .footer-right .contact-footer i .fa-envelope {
   display: flex;
   flex-direction: column;
   align-items: end;
-  margin-right: 80px;
+  margin-right: 50px;
+}
+@media screen and (max-width: 768px) {
+  .contact-us .check-schedule .container {
+    margin-right: 0px;
+    align-items: center;
+  }
 }
 .contact-us .check-schedule .container .form-container {
   width: 400px;

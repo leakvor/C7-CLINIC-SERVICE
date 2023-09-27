@@ -3,75 +3,63 @@
 @import '../mixins/responsive';
 footer {
     background: skyblue;
-    height: 320px;
     margin-top: -5PX;
+    
     .footer-container {
-        // @include margin;
         margin-left: $mainMargin;
         margin-right: $mainMargin;
         height: 100%;
         @include between;
-        align-items: center;
+        
         gap: 50px;
+        @include responsive(xl){
+            gap: 30px;
+        }
+        @include responsive(md){
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+        }
 
         .footer-left{
-            width: 350px;
+            width: 380px;
+            margin-top: $mainMargin;
+            margin-bottom: $mainMargin;
+            @include responsive(xl){
+                width: 300px;
+            }
+            @include responsive (md){
+                @include centered;
+                margin-top:$mainMargin;
+                margin-bottom: 0px;
+            }
+
             img {
                 width: 200px;
                 margin-bottom: 110px;
-            }
-        }
-        .footer-center {
-            @include column;
-            text-align: center;
-            width: 350px;
-            margin: 10px 15px;
-            line-height: 45px;
-            .footer-center-header {
-                height: 55px;
-            }
-            .footer-center-footer {
-                ul{
-                    li {
-                        list-style: none;
-                        a {
-                            text-decoration: none;
-                        }
-                    }
+                @include responsive (md){
+                    margin-bottom: 0px;
                 }
             }
         }
         .footer-right {
+            margin-top: $mainMargin;
+            margin-bottom: $mainMargin;
             width: 380px;
             @include centered;
             .contact-footer {
                 display: flex;
                 align-items: center;
                 i {
-                    // background-color:$seconaryColor;
                     color: $seconaryColor;
-                    font-size: 25px;
-                    // width: 38px;
-                    // height: 38px;
-                    border-radius: 50%;
+                    font-size: 28px;
                     text-align: center;
                     line-height: 42px;
                     margin: 10px 15px;
-                    .fa-map-marker {
-                        font-size: 25px;
-                        width: 80px;
-                        height: 20px;
-                        border-radius: 50%;
-                    }
-                    .fa-telegram {
-                        line-height: 40px;
-                        font-size: 27px;
-                    }
-                    .fa-envelope {
-                        font-size: 10px;
-                        line-height: 38px;
-                    }
                 }
+            }
+            @include responsive(md){
+                margin-top: 0px;
             }
         }   
     }
