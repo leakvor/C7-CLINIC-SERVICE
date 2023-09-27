@@ -133,17 +133,17 @@ footer .footer-container .footer-right .contact-footer i .fa-envelope {
   height: 10vh;
   background: rgba(192, 190, 190, 0.943);
 }
+.table-container h1 {
+  color: blue;
+}
 
 table,
 th,
 td {
   border: 1px solid black;
 }
-
-.color {
+table .color,
+th .color,
+td .color {
   color: red;
-}
-
-.table-container > h1 {
-  color: blue;
 }/*# sourceMappingURL=table-schedul.css.map */

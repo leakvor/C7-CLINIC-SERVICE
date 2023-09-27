@@ -5,31 +5,23 @@
 .our-doctor {
     @include column;
     text-align: center;
-
     margin: {
         left: 50px;
         right: 50px;
-    }
-
-    ;
-
+    };
     h1 {
         @include margin;
         color: $seconaryColor;
     }
-
     .container-buntton {
         @include responsive(xl) {
             flex-direction: row,
         }
-
         display: flex;
         justify-content: end;
         margin-right: 180px;
         width: 100%;
         margin-bottom: 50px;
-        // <<<<<<< HEAD
-
         button {
             padding: 10px;
             width: 170px;
@@ -38,18 +30,14 @@
             border-radius: $borderRadius;
             border: none;
             background: $mainColor;
-
-            // =======
             @include responsive(xl) {
                 justify-content: center;
             }
 
             @include responsive(md) {
                 display: none;
-                // >>>>>>> 294d14811030295457420b2e895f3c4260898a2e
             }
         }
-
         .container {
             display: flex;
             gap: 40px;
@@ -60,10 +48,10 @@
                 align-items: center;
                 justify-content: center;
             }
-
             .card {
                 height: 270px;
                 width: 24%;
+
                 @include responsive(xl) {
                     width: 33%;
                 }
@@ -71,23 +59,18 @@
                 @include responsive(md) {
                     width: 100%;
                 }
-
                 .card-header {
                     width: 270px;
                     height: 170px;
                     @include centered;
-
                     @include responsive(md) {
                         margin-left: 17%;
                         height: 100px;
                     }
-
-
                     img {
                         height: 170px;
                     }
                 }
-
                 .card-footer {
                     @include responsive(xl) {
                         height: 60px;
