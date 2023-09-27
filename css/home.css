@@ -174,7 +174,11 @@ footer .footer-container .footer-right .contact-footer i .fa-envelope {
   width: 100%;
   margin-bottom: 50px;
 }
-<<<<<<< HEAD
+@media screen and (max-width: 1200px) {
+  .our-doctor .container-buntton {
+    flex-direction: row;
+  }
+}
 .our-doctor .container-buntton button {
   padding: 10px;
   width: 170px;
@@ -183,50 +187,44 @@ footer .footer-container .footer-right .contact-footer i .fa-envelope {
   border-radius: 10px;
   border: none;
   background: rgb(171, 215, 239);
-=======
-@media screen and (max-width: 1200px) {
-  .our-doctor .container-buntton {
-    flex-direction: row;
-  }
 }
 @media screen and (max-width: 1200px) {
-  .our-doctor .container-buntton {
+  .our-doctor .container-buntton button {
     justify-content: center;
   }
 }
 @media screen and (max-width: 768px) {
-  .our-doctor .container-buntton {
+  .our-doctor .container-buntton button {
     display: none;
   }
->>>>>>> 294d14811030295457420b2e895f3c4260898a2e
 }
-.our-doctor .container {
+.our-doctor .container-buntton .container {
   display: flex;
   gap: 40px;
 }
 @media screen and (max-width: 1200px) {
-  .our-doctor .container {
+  .our-doctor .container-buntton .container {
     gap: 50px;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
   }
 }
-.our-doctor .container .card {
+.our-doctor .container-buntton .container .card {
   height: 270px;
   width: 24%;
 }
 @media screen and (max-width: 1200px) {
-  .our-doctor .container .card {
+  .our-doctor .container-buntton .container .card {
     width: 33%;
   }
 }
 @media screen and (max-width: 768px) {
-  .our-doctor .container .card {
+  .our-doctor .container-buntton .container .card {
     width: 100%;
   }
 }
-.our-doctor .container .card .card-header {
+.our-doctor .container-buntton .container .card .card-header {
   width: 270px;
   height: 170px;
   display: flex;
@@ -234,14 +232,15 @@ footer .footer-container .footer-right .contact-footer i .fa-envelope {
   align-items: center;
 }
 @media screen and (max-width: 768px) {
-  .our-doctor .container .card .card-header {
+  .our-doctor .container-buntton .container .card .card-header {
     margin-left: 17%;
+    height: 100px;
   }
 }
-.our-doctor .container .card .card-header img {
+.our-doctor .container-buntton .container .card .card-header img {
   height: 170px;
 }
-.our-doctor .container .card .card-footer {
+.our-doctor .container-buntton .container .card .card-footer {
   background: rgb(171, 215, 239);
   height: 70px;
   display: flex;
@@ -252,7 +251,7 @@ footer .footer-container .footer-right .contact-footer i .fa-envelope {
   gap: 10px;
 }
 @media screen and (max-width: 1200px) {
-  .our-doctor .container .card .card-footer {
+  .our-doctor .container-buntton .container .card .card-footer {
     height: 60px;
   }
 }
