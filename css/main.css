@@ -48,6 +48,9 @@ footer .footer-container {
   align-items: center;
   gap: 50px;
 }
+footer .footer-container .footer-left {
+  width: 350px;
+}
 footer .footer-container .footer-left img {
   width: 200px;
   margin-bottom: 110px;
