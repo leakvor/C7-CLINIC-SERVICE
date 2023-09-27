@@ -118,8 +118,9 @@ footer .footer-container .footer-right .contact-footer i .fa-envelope {
   justify-content: center;
   margin-top: 40px;
 }
-.container h3 {
+.container h1 {
   text-align: center;
+  color: blue;
 }
 .container .InformationOfdoctor {
   display: flex;

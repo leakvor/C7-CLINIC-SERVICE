@@ -4,8 +4,9 @@
     @include column;
     justify-content: center;
     margin-top: 40px;
-    h3 {
+    h1 {
         text-align: center;
+        color: $seconaryColor;
     }
     .InformationOfdoctor {
         display: flex;
