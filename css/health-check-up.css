@@ -3,34 +3,114 @@ nav {
   display: flex;
   justify-content: space-between;
 }
-
-.nav-left {
+nav .nav-left {
   flex: 1;
   display: flex;
   justify-content: start;
   align-items: center;
-  margin-left: 40px;
+  margin-left: 50px;
 }
-.nav-left img {
+@media screen and (max-width: 1200px) {
+  nav .nav-left {
+    flex: 0.5;
+  }
+}
+nav .nav-left img {
   height: 60px;
   margin-top: 15px;
 }
-
-.nav-right {
+nav .nav-right {
   flex: 1;
   display: flex;
   justify-content: end;
   align-items: center;
-  margin-right: 40px;
+  margin-right: 50px;
 }
-.nav-right ul {
+nav .nav-right input {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  nav .nav-right #menu__toggle {
+    opacity: 0;
+  }
+  nav .nav-right #menu__toggle:checked + .menu__btn > span {
+    transform: rotate(45deg);
+  }
+  nav .nav-right #menu__toggle:checked + .menu__btn > span::before {
+    top: 0;
+    transform: rotate(0deg);
+  }
+  nav .nav-right #menu__toggle:checked + .menu__btn > span::after {
+    top: 0;
+    transform: rotate(90deg);
+  }
+  nav .nav-right #menu__toggle:checked ~ .menu__box {
+    right: 0 !important;
+  }
+  nav .nav-right .menu__btn {
+    position: absolute;
+    top: 36px;
+    right: 50px;
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+    z-index: 1;
+  }
+  nav .nav-right .menu__btn > span,
+  nav .nav-right .menu__btn > span::before,
+  nav .nav-right .menu__btn > span::after {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #000000;
+    transition-duration: 0.25s;
+  }
+  nav .nav-right .menu__btn > span::before {
+    content: "";
+    top: -8px;
+  }
+  nav .nav-right .menu__btn > span::after {
+    content: "";
+    top: 8px;
+  }
+  nav .nav-right .menu__box {
+    display: block;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 300px;
+    height: 100%;
+    margin: 0;
+    padding: 60px 0;
+    background-color: rgb(171, 215, 239);
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
+    transition-duration: 0.25s;
+  }
+  nav .nav-right .menu__item {
+    display: block;
+    padding: 15px 30px;
+    color: #333;
+    font-family: "Roboto", sans-serif;
+    transition-duration: 0.25s;
+  }
+  nav .nav-right .menu__item:hover {
+    background-color: #CFD8DC;
+  }
+}
+@media screen and (max-width: 1200px) {
+  nav .nav-right {
+    flex: 1.5;
+  }
+}
+nav .nav-right ul {
   display: flex;
   gap: 40px;
 }
-.nav-right ul li {
+nav .nav-right ul li {
   list-style: none;
 }
-.nav-right ul li a {
+nav .nav-right ul li a {
   text-decoration: none;
 }
 
