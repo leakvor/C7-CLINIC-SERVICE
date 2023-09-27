@@ -33,3 +33,19 @@ td {
         color: $tablecolor;
     }
 }
+
+@media(max-width: 700px){
+    table{
+        height: 70vh;
+        width: 95%;    
+    }
+    tr > th{
+        font-size: 8px;
+    }    
+    tr > td{
+        font-size: 10px;
+    }
+    h1{
+        font-size: 20px;
+    }
+}

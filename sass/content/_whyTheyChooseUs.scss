@@ -20,20 +20,27 @@
         display: flex;
         gap: 40px;
         .card {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
             @include responsive(md){
                 width: 45%;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
+                // flex-direction: column;
+                // justify-content: center;
+                // align-items: center;
             }
             @include responsive(sm){
-                width: 98%;
+                width: 97%;
+                p{
+                    font-size: 25px;
+                }
             }
             width: 25%;
             display: flex;
             p {
                 margin-top: 20px;
                 text-align: center;
+                
             }
         }
     

@@ -124,8 +124,13 @@ footer .footer-container .footer-right .contact-footer i .fa-envelope {
 }
 .container .InformationOfdoctor {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   margin-top: 50px;
+}
+@media screen and (max-width: 768px) {
+  .container .InformationOfdoctor {
+    flex-direction: column;
+  }
 }
 .container .InformationOfdoctor .backgroundOfDoctor {
   display: flex;
@@ -151,7 +156,6 @@ footer .footer-container .footer-right .contact-footer i .fa-envelope {
 .container .circleImgaeofDoctor {
   display: flex;
   justify-content: center;
-  height: 400px;
   margin-top: 80px;
 }
 .container .circleImgaeofDoctor .card-image {
@@ -161,18 +165,38 @@ footer .footer-container .footer-right .contact-footer i .fa-envelope {
   width: 80%;
   height: 390px;
 }
+@media screen and (max-width: 992px) {
+  .container .circleImgaeofDoctor .card-image {
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 768px) {
+  .container .circleImgaeofDoctor .card-image {
+    gap: 30px;
+  }
+}
 .container .circleImgaeofDoctor .card-image .card-image-header {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  flex: 1;
-  height: 380px;
+  width: 33%;
+}
+@media screen and (max-width: 992px) {
+  .container .circleImgaeofDoctor .card-image .card-image-header {
+    width: 49%;
+  }
+}
+@media screen and (max-width: 576px) {
+  .container .circleImgaeofDoctor .card-image .card-image-header {
+    width: 100%;
+  }
 }
 .container .circleImgaeofDoctor .card-image .card-image-header img {
   width: 77%;
   height: 300px;
   margin-left: 33px;
   border-radius: 50%;
+  border: 1px solid rgba(192, 190, 190, 0.943);
 }
 .container .circleImgaeofDoctor .card-image .card-image-header .contentOfDoctor h5 {
   margin-top: 20px;
