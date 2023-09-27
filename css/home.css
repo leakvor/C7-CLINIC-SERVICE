@@ -48,6 +48,9 @@ footer .footer-container {
   align-items: center;
   gap: 50px;
 }
+footer .footer-container .footer-left {
+  width: 350px;
+}
 footer .footer-container .footer-left img {
   width: 200px;
   margin-bottom: 110px;
@@ -154,6 +157,15 @@ footer .footer-container .footer-right .contact-footer i .fa-envelope {
   width: 100%;
   margin-bottom: 50px;
 }
+.our-doctor .container-buntton button {
+  padding: 10px;
+  width: 170px;
+  display: flex;
+  justify-content: space-evenly;
+  border-radius: 10px;
+  border: none;
+  background: rgb(171, 215, 239);
+}
 .our-doctor .container {
   display: flex;
   gap: 40px;
@@ -231,6 +243,7 @@ footer .footer-container .footer-right .contact-footer i .fa-envelope {
   width: 100px;
   padding: 10px;
   margin-top: 25px;
+  margin-right: 50px;
   border-radius: 10px;
   border: none;
   background: blue;
