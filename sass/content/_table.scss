@@ -21,18 +21,15 @@
             background: $primaryColor;
         }
     }
+    h1 {
+        color: $seconaryColor;
+    }
 }
-
 table,
 th,
 td {
     border: 1px solid $tablecolorblack;
-}
-
-.color {
-    color: $tablecolor;
-}
-
-.table-container>h1 {
-    color: $seconaryColor;
+    .color {
+        color: $tablecolor;
+    }
 }

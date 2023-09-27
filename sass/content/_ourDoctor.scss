@@ -1,5 +1,6 @@
 @import '../component/variable';
 @import '../component/group-mxin';
+@import '../mixins/responsive';
 .our-doctor {
     @include column;
     text-align: center;
