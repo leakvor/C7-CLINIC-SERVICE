@@ -40,7 +40,7 @@
         .card {
             height: 270px;
             width: 24%;
-            
+
             @include responsive(xl){
                 width: 33%;
             }
@@ -52,25 +52,22 @@
                 height: 200px;
                 @include responsive(md){
                     height: 100px;
-                }
             }
+}
             .card-header {
                 width: 270px;
                 height: 200px;
                 @include centered;
                 @include responsive(md){
                     margin-left: 20%;
-                }
-
-
-                
+                }            
             }
             .card-footer {
                 @include responsive(xl){
                     height: 75px;  
                 }
                 background: $mainColor;
-                height: 70px;
+                height: 60px;
                 @include centered;
                 flex-direction: column;
                 border-radius: $borderRadius;
@@ -79,10 +76,5 @@
         }
 
     }
-}
 
-// <<<<<<< HEAD
-// }
-// =======
-// >>>>>>> d31c5de9828ba2c932b14656d6d6921c84756b80
-// }
+}
