@@ -1,0 +1,38 @@
+@import '../component/variable';
+@import '../component/group-mxin';
+
+.table-container {
+    @include centered;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+    background: $mainColor;
+
+    table {
+        border-collapse: collapse;
+        text-align: center;
+        margin-top: 20px;
+        height: 60vh;
+        width: 90%;
+        background: $primaryColor;
+
+        thead {
+            height: 10vh;
+            background: $primaryColor;
+        }
+    }
+}
+
+table,
+th,
+td {
+    border: 1px solid $tablecolorblack;
+}
+
+.color {
+    color: $tablecolor;
+}
+
+.table-container>h1 {
+    color: $seconaryColor;
+}
