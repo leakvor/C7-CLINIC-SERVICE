@@ -5,7 +5,6 @@
 
 .working-hour {
     @include margin;
-
     margin: {
         left: 65px;
         right:$mainMargin;
@@ -13,5 +12,12 @@
     h1 {
         text-align: center;
         margin-bottom: 50px;
+        color: $seconaryColor;
+    }
+    p,li{
+        font-size: 20px;
+        @include responsive(md){
+            font-size: 13px;
+        }
     }
 }

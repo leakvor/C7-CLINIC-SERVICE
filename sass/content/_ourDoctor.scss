@@ -2,41 +2,67 @@
 @import '../component/group-mxin';
 .our-doctor {
     @include column;
-    align-items: center;
-
+    text-align: center;
     margin: {
         left: 50px;
         right: 50px;
     };
     h1 {
         @include margin;
+        color: $seconaryColor;
     }
     .container-buntton {
+        @include responsive(xl){
+            flex-direction: row,
+        }
         display: flex;
         justify-content: end;
         margin-right: 180px;
         width: 100%;
         margin-bottom: 50px;
+        @include responsive(xl){
+            justify-content: center;
+        }
+        @include responsive(md){
+            display: none;
+        }
     }
-
     .container {
         display: flex;
         gap: 40px;
-
+        @include responsive(xl){
+            gap: 50px;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+        }
         .card {
             height: 270px;
+            width: 24%;
+            @include responsive(xl){
+                width: 33%;
+            }
+            @include responsive(md){
+                width: 100%;
+            }
 
             .card-header {
                 width: 270px;
                 height: 170px;
                 @include centered;
+                @include responsive(md){
+                    margin-left: 17%;
+                }
+
 
                 img {
                     height: 170px;
                 }
             }
-
             .card-footer {
+                @include responsive(xl){
+                    height: 60px;  
+                }
                 background: $mainColor;
                 height: 70px;
                 @include centered;

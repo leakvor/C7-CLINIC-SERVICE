@@ -1,26 +1,36 @@
 @import '../component/variable';
 @import '../component/group-mxin';
+@import '../mixins/responsive';
 
 .why-they-choose-us {
-    height: 270px;
     @include column;
     align-items: center;
-
     margin: {
         left: $mainMargin;
         right: $mainMargin;
     };
     h1 {
         @include margin;
+        color: $seconaryColor;
     }
     .card-container {
+        @include responsive(md){
+           flex-wrap: wrap;
+        }
         display: flex;
         gap: 40px;
         .card {
-            width: 270px;
+            @include responsive(md){
+                width: 45%;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            @include responsive(sm){
+                width: 98%;
+            }
+            width: 25%;
             display: flex;
-            flex-direction: column;
-            align-items: center;
             p {
                 margin-top: 20px;
                 text-align: center;
