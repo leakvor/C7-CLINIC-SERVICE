@@ -48,6 +48,9 @@ footer .footer-container {
   align-items: center;
   gap: 50px;
 }
+footer .footer-container .footer-left {
+  width: 350px;
+}
 footer .footer-container .footer-left img {
   width: 200px;
   margin-bottom: 110px;
@@ -124,11 +127,14 @@ footer .footer-container .footer-right .contact-footer i .fa-envelope {
   margin-top: 20px;
   height: 60vh;
   width: 90%;
-  background: gainsboro;
+  background: rgba(192, 190, 190, 0.943);
 }
 .table-container table thead {
   height: 10vh;
-  background: gainsboro;
+  background: rgba(192, 190, 190, 0.943);
+}
+.table-container h1 {
+  color: blue;
 }
 
 table,
@@ -136,11 +142,8 @@ th,
 td {
   border: 1px solid black;
 }
-
-.color {
+table .color,
+th .color,
+td .color {
   color: red;
-}
-
-.table-container > h1 {
-  color: blue;
 }/*# sourceMappingURL=table-schedul.css.map */
