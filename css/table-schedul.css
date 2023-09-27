@@ -118,54 +118,64 @@ footer .footer-container .footer-right .contact-footer i {
   font-family: sans-serif;
 }
 
+/* Pictures-clinic */
+* {
+  text-decoration: none;
+}
+
+.Pictures-clinic {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40vh;
+  margin-top: 50px;
+}
+
+.Pictures {
+  display: flex;
+  justify-content: flex-end;
+  flex: 1;
+}
+
+.Paragraph {
+  flex: 1;
+}
+.Paragraph p {
+  width: 50%;
+  margin-top: 25px;
+}
+
+/* table */
 .table-container {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  margin-top: -30px;
   height: 100vh;
   width: 100%;
-  background: rgb(171, 215, 239);
 }
-.table-container table {
+.table-container h1 {
+  color: blue;
+}
+.table-container .color {
+  color: red;
+}
+
+thead {
+  height: 10vh;
+  background: rgba(192, 190, 190, 0.943);
+}
+
+table {
   border-collapse: collapse;
   text-align: center;
   margin-top: 20px;
   height: 60vh;
   width: 90%;
-  background: rgba(192, 190, 190, 0.943);
-}
-.table-container table thead {
-  height: 10vh;
-  background: rgba(192, 190, 190, 0.943);
-}
-.table-container h1 {
-  color: blue;
+  background: rgb(171, 215, 239);
 }
 
-table,
-th,
-td {
+table, th, td {
   border: 1px solid black;
-}
-table .color,
-th .color,
-td .color {
-  color: red;
-}
-
-@media (max-width: 700px) {
-  table {
-    height: 70vh;
-    width: 95%;
-  }
-  tr > th {
-    font-size: 8px;
-  }
-  tr > td {
-    font-size: 10px;
-  }
-  h1 {
-    font-size: 20px;
-  }
 }/*# sourceMappingURL=table-schedul.css.map */
