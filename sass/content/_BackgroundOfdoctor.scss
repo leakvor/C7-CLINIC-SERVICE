@@ -1,5 +1,6 @@
 @import '../component/variable';
 @import '../component/group-mxin';
+@import '../mixins/responsive';
 .container {
     @include column;
     justify-content: center;
@@ -10,7 +11,10 @@
     }
     .InformationOfdoctor {
         display: flex;
-        justify-content: center;
+        justify-content: space-evenly;
+        @include responsive(md){
+        
+        }
         margin-top: 50px;
         .backgroundOfDoctor {
             display: flex;
@@ -18,8 +22,14 @@
             width: 80%;
             height: 400px;
             img {
+                height: 400px;
                 @include centered;
                 flex: 1;
+                @include responsive(md){
+                    height: 300px;
+                    width: 280px;
+                    margin-right: 15px;
+                }
             }
             .textOfbackground {
                 @include column;
@@ -34,22 +44,33 @@
     .circleImgaeofDoctor {
         display: flex;
         justify-content: center;
-        height: 400px;
         margin-top: 80px;
         .card-image {
             @include centered;
             width: 80%;
-            height: 390px;
+            height: 400px;
+            @include responsive(lg){
+                flex-wrap: wrap;
+            }
+            @include responsive(md){
+                gap: 30px
+            }
             .card-image-header {
                 @include column;
                 justify-content: center;
-                flex: 1;
-                height: 380px;
+                width: 33%;
+                @include responsive(lg){
+                    width: 50%;
+                }
+                @include responsive(md){
+                    width: 100%;
+                }
                 img {
                     width: 77%;
                     height: 300px;
                     margin-left: 33px;
-                    border-radius: 50%;
+                    border-radius: 50px;
+                    border: 1px solid $primaryColor;
                 }
                 .contentOfDoctor {
                     h5 {

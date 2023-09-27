@@ -210,7 +210,7 @@ footer .footer-container .footer-right .contact-footer i {
 }
 .container .InformationOfdoctor {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   margin-top: 50px;
 }
 .container .InformationOfdoctor .backgroundOfDoctor {
@@ -220,10 +220,18 @@ footer .footer-container .footer-right .contact-footer i {
   height: 400px;
 }
 .container .InformationOfdoctor .backgroundOfDoctor img {
+  height: 400px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex: 1;
+}
+@media screen and (max-width: 768px) {
+  .container .InformationOfdoctor .backgroundOfDoctor img {
+    height: 300px;
+    width: 280px;
+    margin-right: 15px;
+  }
 }
 .container .InformationOfdoctor .backgroundOfDoctor .textOfbackground {
   display: flex;
@@ -237,7 +245,6 @@ footer .footer-container .footer-right .contact-footer i {
 .container .circleImgaeofDoctor {
   display: flex;
   justify-content: center;
-  height: 400px;
   margin-top: 80px;
 }
 .container .circleImgaeofDoctor .card-image {
@@ -245,20 +252,40 @@ footer .footer-container .footer-right .contact-footer i {
   justify-content: center;
   align-items: center;
   width: 80%;
-  height: 390px;
+  height: 400px;
+}
+@media screen and (max-width: 992px) {
+  .container .circleImgaeofDoctor .card-image {
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 768px) {
+  .container .circleImgaeofDoctor .card-image {
+    gap: 30px;
+  }
 }
 .container .circleImgaeofDoctor .card-image .card-image-header {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  flex: 1;
-  height: 380px;
+  width: 33%;
+}
+@media screen and (max-width: 992px) {
+  .container .circleImgaeofDoctor .card-image .card-image-header {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .container .circleImgaeofDoctor .card-image .card-image-header {
+    width: 100%;
+  }
 }
 .container .circleImgaeofDoctor .card-image .card-image-header img {
   width: 77%;
   height: 300px;
   margin-left: 33px;
-  border-radius: 50%;
+  border-radius: 50px;
+  border: 1px solid rgba(192, 190, 190, 0.943);
 }
 .container .circleImgaeofDoctor .card-image .card-image-header .contentOfDoctor h5 {
   margin-top: 20px;

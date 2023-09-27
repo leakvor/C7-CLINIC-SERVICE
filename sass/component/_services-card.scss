@@ -38,7 +38,7 @@
         }
         p{
             @include responsive(lg){
-                font-size: 10px;
+                font-size: 9px;
             }
             @include responsive(md){
                 font-size: 9px;

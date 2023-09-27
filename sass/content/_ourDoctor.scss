@@ -1,74 +1,83 @@
 @import '../component/variable';
 @import '../component/group-mxin';
 @import '../mixins/responsive';
+
 .our-doctor {
     @include column;
     text-align: center;
+
     margin: {
         left: 50px;
         right: 50px;
-    };
+    }
+
+    ;
+
     h1 {
         @include margin;
         color: $seconaryColor;
     }
+
     .container-buntton {
-        @include responsive(xl){
+        @include responsive(xl) {
             flex-direction: row,
         }
+
         display: flex;
         justify-content: end;
         margin-right: 180px;
         width: 100%;
         margin-bottom: 50px;
-        @include responsive(xl){
+
+        @include responsive(xl) {
             justify-content: center;
         }
-        @include responsive(md){
+
+        @include responsive(md) {
             display: none;
         }
     }
+
     .container {
         display: flex;
         gap: 40px;
-        @include responsive(xl){
+
+        @include responsive(xl) {
             gap: 95px;
             flex-wrap: wrap;
             align-items: center;
             justify-content: center;
         }
+
         .card {
             height: 270px;
             width: 24%;
 
-            @include responsive(xl){
+            @include responsive(xl) {
                 width: 33%;
             }
-            @include responsive(md){
+
+            @include responsive(md) {
                 width: 90%;
-                
             }
             img {
                 height: 200px;
-                @include responsive(md){
-                    height: 250px;
             }
-}
             .card-header {
                 width: 100%;
                 height: 200px;
                 @include centered;
-                // background: yellow;
-                @include responsive(md){
-                    // margin-left: 22%;
-                    // width: 270px;
-                    height: 250px;
-                }            
-            }
-            .card-footer {
-                @include responsive(xl){
-                    height: 75px;  
+
+                @include responsive(md) {
+                    margin-left: 20%;
                 }
+            }
+
+            .card-footer {
+                @include responsive(xl) {
+                    height: 75px;
+                }
+
                 background: $mainColor;
                 height: 60px;
                 @include centered;
