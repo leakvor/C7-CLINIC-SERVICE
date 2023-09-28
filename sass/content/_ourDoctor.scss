@@ -11,21 +11,26 @@
         right: 50px;
     }
 
-    ;
-
     h1 {
         @include margin;
         color: $seconaryColor;
     }
 
     .container-buntton {
+        button{
+            height: 40px;
+            width: 150px;
+            margin-right: 5px;
+            border-radius: 10px;
+            background: $mainColor;
+            border: none;
+        }
         @include responsive(xl) {
             flex-direction: row,
         }
 
         display: flex;
         justify-content: end;
-        margin-right: 180px;
         width: 100%;
         margin-bottom: 50px;
 
@@ -40,6 +45,7 @@
 
     .container {
         display: flex;
+        width: 94%;
         gap: 40px;
 
         @include responsive(xl) {

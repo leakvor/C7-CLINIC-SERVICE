@@ -191,6 +191,11 @@ footer .footer-container .footer-right .contact-footer i {
   }
 }
 
+header {
+  height: 480px;
+  background-size: cover;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -216,7 +221,7 @@ footer .footer-container .footer-right .contact-footer i {
 .container .InformationOfdoctor .backgroundOfDoctor {
   display: flex;
   justify-content: center;
-  width: 80%;
+  width: 100%;
   height: 400px;
 }
 .container .InformationOfdoctor .backgroundOfDoctor img {

@@ -191,6 +191,11 @@ footer .footer-container .footer-right .contact-footer i {
   }
 }
 
+header {
+  height: 480px;
+  background-size: cover;
+}
+
 * {
   padding: 0;
   margin: 0;

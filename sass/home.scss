@@ -3,5 +3,17 @@
 @import './content/ourDoctor';
 @import './content/MakeAppointment';
 @import "./component/location";
+@import './mixins/responsive';
+
+header{
+    height: 480px;
+    background-image: url(/image/img-of-content/banner3.jpg);
+    background-size: cover;
+    @include responsive(md){
+        height: 230px;
+        
+    }
+    
+}
 
 
