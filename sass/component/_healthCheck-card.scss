@@ -9,7 +9,7 @@
     width: 80%;
     @include between;
     flex-wrap: wrap;
-    margin-bottom: $mainMargin;
+    margin: $mainMargin;
 }
 .card {
     width: 30%;
