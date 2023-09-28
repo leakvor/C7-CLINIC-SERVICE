@@ -221,6 +221,8 @@ footer .footer-container .footer-right .contact-footer i {
 }
 .container .InformationOfdoctor .backgroundOfDoctor img {
   height: 400px;
+  border-radius: 7px;
+  border-style: outset;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -281,11 +283,15 @@ footer .footer-container .footer-right .contact-footer i {
   }
 }
 .container .circleImgaeofDoctor .card-image .card-image-header img {
-  width: 77%;
-  height: 300px;
+  width: 80%;
+  height: 260px;
   margin-left: 33px;
-  border-radius: 50px;
-  border: 1px solid rgba(192, 190, 190, 0.943);
+  border-radius: 7px;
+}
+.container .circleImgaeofDoctor .card-image .card-image-header img:hover {
+  transition: 1s;
+  transform: scale(1);
+  box-shadow: 2px 2px 10px 2px rgb(171, 215, 239);
 }
 .container .circleImgaeofDoctor .card-image .card-image-header .contentOfDoctor h5 {
   margin-top: 20px;
