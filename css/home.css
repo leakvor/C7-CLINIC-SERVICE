@@ -191,6 +191,11 @@ footer .footer-container .footer-right .contact-footer i {
   }
 }
 
+header {
+  height: 480px;
+  background-size: cover;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -259,9 +264,16 @@ footer .footer-container .footer-right .contact-footer i {
 .our-doctor .container-buntton {
   display: flex;
   justify-content: end;
-  margin-right: 180px;
   width: 100%;
   margin-bottom: 50px;
+}
+.our-doctor .container-buntton button {
+  height: 40px;
+  width: 150px;
+  margin-right: 5px;
+  border-radius: 10px;
+  background: rgb(171, 215, 239);
+  border: none;
 }
 @media screen and (max-width: 1200px) {
   .our-doctor .container-buntton {
@@ -280,6 +292,7 @@ footer .footer-container .footer-right .contact-footer i {
 }
 .our-doctor .container {
   display: flex;
+  width: 94%;
   gap: 40px;
 }
 @media screen and (max-width: 1200px) {
@@ -307,14 +320,6 @@ footer .footer-container .footer-right .contact-footer i {
 .our-doctor .container .card img {
   height: 200px;
 }
-<<<<<<< HEAD
-=======
-@media screen and (max-width: 768px) {
-  .our-doctor .container .card img {
-    height: 250px;
-  }
-}
->>>>>>> 1db6214e69cb68c3560bd6b230779513b26dba86
 .our-doctor .container .card .card-header {
   width: 100%;
   height: 200px;
@@ -324,7 +329,7 @@ footer .footer-container .footer-right .contact-footer i {
 }
 @media screen and (max-width: 768px) {
   .our-doctor .container .card .card-header {
-    height: 250px;
+    margin-left: 20%;
   }
 }
 .our-doctor .container .card .card-footer {
@@ -349,9 +354,8 @@ footer .footer-container .footer-right .contact-footer i {
   align-items: center;
 }
 .contact-us h1 {
-  margin-top: 30px;
+  margin-top: 50px;
   margin-bottom: 50px;
-  color: blue;
 }
 @media screen and (max-width: 768px) {
   .contact-us h1 {
@@ -360,23 +364,42 @@ footer .footer-container .footer-right .contact-footer i {
 }
 .contact-us .check-schedule {
   width: 100%;
-  height: 475px;
+  height: 490px;
   background-image: url(/image/img-of-content/form.jpg);
   background-size: cover;
 }
-.contact-us .check-schedule .container {
+.contact-us .check-schedule button {
+  width: 150px;
+  height: 45px;
+  margin-top: 30px;
+  margin-left: 50px;
+  border-radius: 10px;
+  border: none;
+  background: blue;
+}
+.contact-us .check-schedule button a {
+  color: white;
+}
+@media screen and (max-width: 768px) {
+  .contact-us .check-schedule button {
+    padding: 5px;
+    margin-bottom: 10px;
+  }
+}
+.contact-us .container {
   display: flex;
   flex-direction: column;
   align-items: end;
   margin-right: 50px;
 }
 @media screen and (max-width: 768px) {
-  .contact-us .check-schedule .container {
+  .contact-us .container {
+    margin-top: 20px;
     margin-right: 0px;
     align-items: center;
   }
 }
-.contact-us .check-schedule .container .form-container {
+.contact-us .container .form-container {
   width: 400px;
   height: 350px;
   display: flex;
@@ -387,47 +410,46 @@ footer .footer-container .footer-right .contact-footer i {
   border: 2px solid rgba(192, 190, 190, 0.943);
   background: rgba(0, 0, 0, 0.3411764706);
 }
-.contact-us .check-schedule .container .form-container form {
+.contact-us .container .form-container header {
+  color: white;
+}
+.contact-us .container .form-container form {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
-.contact-us .check-schedule .container .form-container form input {
+.contact-us .container .form-container form input {
   margin-top: 25px;
   padding: 10px;
   width: 150%;
   border-radius: 5px;
   border: none;
 }
-.contact-us .check-schedule .container .form-container button {
+.contact-us .container .form-container button {
   width: 100px;
-  padding: 10px;
+  height: 45px;
   margin-top: 25px;
   margin-right: 50px;
   border-radius: 10px;
   border: none;
   background: blue;
-}
-.contact-us .check-schedule button {
-  width: 150px;
-  padding: 10px;
-  margin-top: 30px;
-  margin-left: 70px;
-  border-radius: 10px;
-  border: none;
-  background: blue;
-  color: rgba(192, 190, 190, 0.943);
-}
-@media screen and (max-width: 768px) {
-  .contact-us .check-schedule button {
-    padding: 5px;
-    margin-bottom: 10px;
-  }
+  color: white;
 }
 
 .location h1 {
   margin-top: 50px;
   margin-bottom: 60px;
   text-align: center;
+}
+
+header {
+  height: 480px;
+  background-image: url(/image/img-of-content/banner3.jpg);
+  background-size: cover;
+}
+@media screen and (max-width: 768px) {
+  header {
+    height: 230px;
+  }
 }/*# sourceMappingURL=home.css.map */
