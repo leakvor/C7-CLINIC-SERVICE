@@ -12,9 +12,6 @@
     .InformationOfdoctor {
         display: flex;
         justify-content: space-evenly;
-        @include responsive(md){
-        
-        }
         margin-top: 50px;
         .backgroundOfDoctor {
             display: flex;
@@ -27,10 +24,13 @@
                 border-style: outset;
                 @include centered;
                 flex: 1;
-                @include responsive(md){
+                @include responsive(Tablet){
                     height: 300px;
                     width: 280px;
                     margin-right: 15px;
+                }
+                @include mobile{
+                    height: 200px;
                 }
             }
             .textOfbackground {
@@ -51,20 +51,20 @@
             @include centered;
             width: 80%;
             height: 400px;
-            @include responsive(lg){
+            @include responsive(Laptop){
                 flex-wrap: wrap;
             }
-            @include responsive(md){
+            @include responsive(Tablet){
                 gap: 30px
             }
             .card-image-header {
                 @include column;
                 justify-content: center;
                 width: 33%;
-                @include responsive(lg){
+                @include responsive(Tablet){
                     width: 50%;
                 }
-                @include responsive(md){
+                @include responsive(mobile){
                     width: 100%;
                 }
                 img {

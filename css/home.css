@@ -10,7 +10,7 @@ nav .nav-left {
   align-items: center;
   margin-left: 50px;
 }
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1024px) {
   nav .nav-left {
     flex: 0.5;
   }
@@ -29,7 +29,7 @@ nav .nav-right {
 nav .nav-right input {
   display: none;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 730px) {
   nav .nav-right #menu__toggle {
     opacity: 0;
   }
@@ -98,7 +98,7 @@ nav .nav-right input {
     background-color: #CFD8DC;
   }
 }
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1024px) {
   nav .nav-right {
     flex: 1.5;
   }
@@ -126,12 +126,12 @@ footer .footer-container {
   justify-content: space-between;
   gap: 50px;
 }
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: ) {
   footer .footer-container {
     gap: 30px;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: ) {
   footer .footer-container {
     flex-wrap: wrap;
     align-items: center;
@@ -143,12 +143,12 @@ footer .footer-container .footer-left {
   margin-top: 50px;
   margin-bottom: 50px;
 }
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: ) {
   footer .footer-container .footer-left {
     width: 300px;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: ) {
   footer .footer-container .footer-left {
     display: flex;
     justify-content: center;
@@ -161,7 +161,7 @@ footer .footer-container .footer-left img {
   width: 200px;
   margin-bottom: 110px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: ) {
   footer .footer-container .footer-left img {
     margin-bottom: 0px;
   }
@@ -185,7 +185,7 @@ footer .footer-container .footer-right .contact-footer i {
   line-height: 42px;
   margin: 10px 15px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: ) {
   footer .footer-container .footer-right {
     margin-top: 0px;
   }
@@ -219,7 +219,7 @@ header {
   display: flex;
   gap: 40px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: ) {
   .why-they-choose-us .card-container {
     flex-wrap: wrap;
   }
@@ -231,12 +231,12 @@ header {
   width: 25%;
   display: flex;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: ) {
   .why-they-choose-us .card-container .card {
     width: 45%;
   }
 }
-@media screen and (max-width: 576px) {
+@media screen and (max-width: ) {
   .why-they-choose-us .card-container .card {
     width: 97%;
   }
@@ -277,17 +277,17 @@ header {
   background: rgb(171, 215, 239);
   border: none;
 }
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: ) {
   .our-doctor .container-buntton {
     flex-direction: row;
   }
 }
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: ) {
   .our-doctor .container-buntton {
     justify-content: end;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: ) {
   .our-doctor .container-buntton {
     display: none;
   }
@@ -297,7 +297,7 @@ header {
   width: 93%;
   gap: 40px;
 }
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: ) {
   .our-doctor .container {
     gap: 95px;
     flex-wrap: wrap;
@@ -309,12 +309,12 @@ header {
   height: 270px;
   width: 24%;
 }
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: ) {
   .our-doctor .container .card {
     width: 33%;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: ) {
   .our-doctor .container .card {
     width: 90%;
   }
@@ -329,6 +329,14 @@ header {
   justify-content: center;
   align-items: center;
 }
+<<<<<<< HEAD
+=======
+@media screen and (max-width: ) {
+  .our-doctor .container .card .card-header {
+    margin-left: 20%;
+  }
+}
+>>>>>>> df8e5c67d5b17d8d2fdae6d5f46bf2edfd49eb0d
 .our-doctor .container .card .card-footer {
   background: rgb(171, 215, 239);
   height: 60px;
@@ -339,7 +347,7 @@ header {
   border-radius: 10px;
   gap: 10px;
 }
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: ) {
   .our-doctor .container .card .card-footer {
     height: 75px;
   }
@@ -354,7 +362,7 @@ header {
   margin-top: 50px;
   margin-bottom: 50px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: ) {
   .contact-us h1 {
     margin-top: 100px;
   }
@@ -378,7 +386,7 @@ header {
 .contact-us .check-schedule button a {
   color: white;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: ) {
   .contact-us .check-schedule button {
     padding: 5px;
     margin-bottom: 10px;
@@ -390,7 +398,7 @@ header {
   align-items: end;
   margin-right: 50px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: ) {
   .contact-us .container {
     margin-top: 20px;
     margin-right: 0px;
@@ -446,7 +454,7 @@ header {
   background-image: url(/image/img-of-content/banner3.jpg);
   background-size: cover;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: ) {
   header {
     height: 230px;
   }

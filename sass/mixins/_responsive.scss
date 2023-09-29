@@ -1,8 +1,8 @@
 $breakpoint: ( 
-    'sm': 576px,
-    'md': 768px,
-    'lg': 992px,
-    'xl': 1200px,
+    'mobile': 620px,
+    'Tablet': 730px,
+    'Laptop': 1024px,
+    'Desktop': 1200px,
 );
 
 @mixin responsive($size){
