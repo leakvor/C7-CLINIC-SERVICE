@@ -10,7 +10,7 @@ nav .nav-left {
   align-items: center;
   margin-left: 50px;
 }
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: ) {
   nav .nav-left {
     flex: 0.5;
   }
@@ -29,7 +29,7 @@ nav .nav-right {
 nav .nav-right input {
   display: none;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: ) {
   nav .nav-right #menu__toggle {
     opacity: 0;
   }
@@ -98,7 +98,7 @@ nav .nav-right input {
     background-color: #CFD8DC;
   }
 }
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: ) {
   nav .nav-right {
     flex: 1.5;
   }
@@ -126,12 +126,12 @@ footer .footer-container {
   justify-content: space-between;
   gap: 50px;
 }
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: ) {
   footer .footer-container {
     gap: 30px;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: ) {
   footer .footer-container {
     flex-wrap: wrap;
     align-items: center;
@@ -143,12 +143,12 @@ footer .footer-container .footer-left {
   margin-top: 50px;
   margin-bottom: 50px;
 }
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: ) {
   footer .footer-container .footer-left {
     width: 300px;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: ) {
   footer .footer-container .footer-left {
     display: flex;
     justify-content: center;
@@ -161,7 +161,7 @@ footer .footer-container .footer-left img {
   width: 200px;
   margin-bottom: 110px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: ) {
   footer .footer-container .footer-left img {
     margin-bottom: 0px;
   }
@@ -185,7 +185,7 @@ footer .footer-container .footer-right .contact-footer i {
   line-height: 42px;
   margin: 10px 15px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: ) {
   footer .footer-container .footer-right {
     margin-top: 0px;
   }
@@ -213,7 +213,13 @@ header {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  margin-bottom: 50px;
+  margin: 50px;
+}
+@media screen and (max-width: 1024px) {
+  .container-card {
+    width: 90%;
+    margin-top: 0px;
+  }
 }
 
 .card {
@@ -222,18 +228,17 @@ header {
   margin-top: 50px;
   background: rgba(192, 190, 190, 0.943);
 }
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1024px) {
   .card {
     width: 32%;
   }
 }
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 730px) {
   .card {
     width: 48%;
-    height: 320px;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 620px) {
   .card {
     width: 98%;
   }
@@ -250,16 +255,6 @@ header {
   color: blue;
 }
 .card .card-footer p {
-  font-size: 12px;
+  font-size: 11px;
   text-align: center;
-}
-@media screen and (max-width: 992px) {
-  .card .card-footer p {
-    font-size: 9px;
-  }
-}
-@media screen and (max-width: 768px) {
-  .card .card-footer p {
-    font-size: 9px;
-  }
 }/*# sourceMappingURL=health-check-up.css.map */
