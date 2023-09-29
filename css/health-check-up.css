@@ -260,4 +260,28 @@ body {
 .card .card-footer p {
   font-size: 11px;
   text-align: center;
+<<<<<<< HEAD
+}
+@media screen and (max-width: 992px) {
+  .card .card-footer p {
+    font-size: 9px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .card .card-footer p {
+    font-size: 9px;
+  }
+}
+
+header {
+  height: 480px;
+  background-image: url(/image/img-of-content/header-check-health.jpg);
+  background-size: cover;
+}
+@media screen and (max-width: 768px) {
+  header {
+    height: 230px;
+  }
+=======
+>>>>>>> df8e5c67d5b17d8d2fdae6d5f46bf2edfd49eb0d
 }/*# sourceMappingURL=health-check-up.css.map */

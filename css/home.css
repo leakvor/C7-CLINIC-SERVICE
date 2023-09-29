@@ -256,6 +256,8 @@ body {
 .our-doctor {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
   margin-left: 50px;
   margin-right: 50px;
@@ -286,7 +288,7 @@ body {
 }
 @media screen and (max-width: ) {
   .our-doctor .container-buntton {
-    justify-content: center;
+    justify-content: end;
   }
 }
 @media screen and (max-width: ) {
@@ -296,7 +298,7 @@ body {
 }
 .our-doctor .container {
   display: flex;
-  width: 94%;
+  width: 93%;
   gap: 40px;
 }
 @media screen and (max-width: ) {
@@ -322,7 +324,7 @@ body {
   }
 }
 .our-doctor .container .card img {
-  height: 200px;
+  height: 203px;
 }
 .our-doctor .container .card .card-header {
   width: 100%;
@@ -331,11 +333,14 @@ body {
   justify-content: center;
   align-items: center;
 }
+<<<<<<< HEAD
+=======
 @media screen and (max-width: ) {
   .our-doctor .container .card .card-header {
     margin-left: 20%;
   }
 }
+>>>>>>> df8e5c67d5b17d8d2fdae6d5f46bf2edfd49eb0d
 .our-doctor .container .card .card-footer {
   background: rgb(171, 215, 239);
   height: 60px;
@@ -358,10 +363,50 @@ body {
   background-image: url(/image/img-of-content/img-form.jpg);
   background-position: center;
   background-size: cover;
+<<<<<<< HEAD
+=======
+}
+.contact-us .check-schedule button {
+  width: 150px;
+  height: 45px;
+  margin-top: 30px;
+  margin-left: 50px;
+  border-radius: 10px;
+  border: none;
+  background: blue;
+  color: white;
+}
+.contact-us .check-schedule button a {
+  color: white;
+}
+@media screen and (max-width: ) {
+  .contact-us .check-schedule button {
+    padding: 5px;
+    margin-bottom: 10px;
+  }
+}
+.contact-us .container {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  margin-right: 50px;
+}
+@media screen and (max-width: ) {
+  .contact-us .container {
+    margin-top: 20px;
+    margin-right: 0px;
+    align-items: center;
+  }
+}
+.contact-us .container .form-container {
+  width: 400px;
+  height: 350px;
+>>>>>>> 45cd422c4bf221d83b0750231329ee7f2c1e80bc
   display: flex;
   justify-content: center;
   align-items: center;
 }
+<<<<<<< HEAD
 .feed-back form {
   width: 35%;
 }
@@ -382,6 +427,32 @@ body {
 }
 .feed-back form button {
   padding: 10px 0;
+=======
+.contact-us .container .form-container .header1 {
+  color: white;
+}
+.contact-us .container .form-container form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.contact-us .container .form-container form input {
+  margin-top: 25px;
+  padding: 10px;
+  width: 150%;
+  border-radius: 5px;
+  border: none;
+}
+.contact-us .container .form-container button {
+  width: 100px;
+  height: 45px;
+  margin-top: 25px;
+  margin-right: 50px;
+  border-radius: 10px;
+  border: none;
+  background: blue;
+>>>>>>> 45cd422c4bf221d83b0750231329ee7f2c1e80bc
   color: white;
   background-color: blue;
   border: 1px solid white;

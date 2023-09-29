@@ -348,8 +348,40 @@ header .image p {
 header .image b {
   font-size: 70px;
 }
+<<<<<<< HEAD
 @media screen and (max-width: 620px) {
   header .image b {
     font-size: 40px;
   }
+=======
+.container-card .card:hover .card__content {
+  transform: rotateX(0deg);
+}
+<<<<<<< HEAD
+@media screen and (max-width: 768px) {
+  .card .card-footer p {
+    font-size: 9px;
+  }
+}
+
+header {
+  height: 480px;
+  background-image: url(/image/img-of-content/heaer-servicce.jpg);
+  background-size: cover;
+}
+@media screen and (max-width: 768px) {
+  header {
+    height: 230px;
+  }
+=======
+.container-card .card:hover .card__title {
+  margin: 0;
+  font-size: 24px;
+  color: #333;
+  font-weight: 700;
+}
+.container-card .card:hover svg {
+  scale: 0;
+>>>>>>> df8e5c67d5b17d8d2fdae6d5f46bf2edfd49eb0d
+>>>>>>> 45cd422c4bf221d83b0750231329ee7f2c1e80bc
 }/*# sourceMappingURL=service.css.map */

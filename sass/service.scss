@@ -1,6 +1,24 @@
 @import './main.scss';
-@import './component/card-service';
+<<<<<<< HEAD
+@import './component/services-card';
 @import './mixins/responsive';
+header{
+    height: 480px;
+    background-image: url(/image/img-of-content/heaer-servicce.jpg);
+    background-size: cover;
+    @include responsive(md){
+        height: 230px;
+        
+    }
+    
+}
+=======
+@import './component/card-service';
+<<<<<<< HEAD
+@import './mixins/responsive';
+=======
+>>>>>>> df8e5c67d5b17d8d2fdae6d5f46bf2edfd49eb0d
+>>>>>>> 45cd422c4bf221d83b0750231329ee7f2c1e80bc
 
 header {
     background-image: url(/image/img-of-content/header1.webp);
