@@ -203,6 +203,10 @@ header {
   font-family: sans-serif;
 }
 
+body {
+  background-color: rgb(241, 248, 249);
+}
+
 .why-they-choose-us {
   display: flex;
   flex-direction: column;
@@ -348,99 +352,49 @@ header {
   }
 }
 
-.contact-us {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.contact-us h1 {
-  margin-top: 50px;
-  margin-bottom: 50px;
-}
-@media screen and (max-width: ) {
-  .contact-us h1 {
-    margin-top: 100px;
-  }
-}
-.contact-us .check-schedule {
+.feed-back {
   width: 100%;
-  height: 490px;
-  background-image: url(/image/img-of-content/form.jpg);
+  margin-top: 50px;
+  background-image: url(/image/img-of-content/img-form.jpg);
+  background-position: center;
   background-size: cover;
-}
-.contact-us .check-schedule button {
-  width: 150px;
-  height: 45px;
-  margin-top: 30px;
-  margin-left: 50px;
-  border-radius: 10px;
-  border: none;
-  background: blue;
-}
-.contact-us .check-schedule button a {
-  color: white;
-}
-@media screen and (max-width: ) {
-  .contact-us .check-schedule button {
-    padding: 5px;
-    margin-bottom: 10px;
-  }
-}
-.contact-us .container {
-  display: flex;
-  flex-direction: column;
-  align-items: end;
-  margin-right: 50px;
-}
-@media screen and (max-width: ) {
-  .contact-us .container {
-    margin-top: 20px;
-    margin-right: 0px;
-    align-items: center;
-  }
-}
-.contact-us .container .form-container {
-  width: 400px;
-  height: 350px;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
-  border-radius: 10px;
-  border: 2px solid rgba(192, 190, 190, 0.943);
-  background: rgba(0, 0, 0, 0.3411764706);
 }
-.contact-us .container .form-container header {
+.feed-back form {
+  width: 35%;
+}
+.feed-back form h3 {
+  text-align: center;
+  margin: 20px;
+  color: blue;
+}
+.feed-back form .input-group {
+  margin-bottom: 30px;
+}
+.feed-back form .input-group input,
+.feed-back form .input-group textarea {
+  width: 100%;
+  padding: 5px;
+  border: 2px solid;
+  font-size: 15px;
+}
+.feed-back form button {
+  padding: 10px 0;
   color: white;
-}
-.contact-us .container .form-container form {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-.contact-us .container .form-container form input {
-  margin-top: 25px;
-  padding: 10px;
-  width: 150%;
-  border-radius: 5px;
-  border: none;
-}
-.contact-us .container .form-container button {
-  width: 100px;
-  height: 45px;
-  margin-top: 25px;
-  margin-right: 50px;
-  border-radius: 10px;
-  border: none;
-  background: blue;
-  color: white;
+  background-color: blue;
+  border: 1px solid white;
+  width: 100%;
+  cursor: pointer;
+  margin-bottom: 20px;
 }
 
 .location h1 {
   margin-top: 50px;
   margin-bottom: 60px;
   text-align: center;
+  color: blue;
 }
 
 header {

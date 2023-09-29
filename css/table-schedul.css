@@ -203,6 +203,10 @@ header {
   font-family: sans-serif;
 }
 
+body {
+  background-color: rgb(241, 248, 249);
+}
+
 .Pictures-clinic {
   display: flex;
   justify-content: center;
