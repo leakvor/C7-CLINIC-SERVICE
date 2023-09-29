@@ -13,7 +13,7 @@ nav {
         justify-content: start;
         align-items: center;
         margin-left: $mainMargin;
-        @include responsive(xl){
+        @include responsive(Laptop){
             flex: 0.5;
         }
 
@@ -33,7 +33,7 @@ nav {
         input{
             display: none;
         }
-        @include responsive(md){
+        @include responsive(Tablet){
               #menu__toggle {
                 opacity: 0;
               }
@@ -102,7 +102,7 @@ nav {
                 background-color: #CFD8DC;
               }
         }
-        @include responsive(xl){
+        @include responsive(Laptop){
             flex: 1.5;
         }
         ul {

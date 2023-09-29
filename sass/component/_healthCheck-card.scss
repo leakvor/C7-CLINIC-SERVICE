@@ -12,7 +12,6 @@
     margin: $mainMargin;
     @include responsive(Laptop){
         width: 90%;
-        margin-top: 0px;
     }
 }
 .card {
@@ -25,7 +24,6 @@
     }
     @include responsive(Tablet){
         width: 48%;
-        // height: 320px;
     }
     @include responsive(mobile){
         width: 98%;
@@ -41,9 +39,6 @@
             color: $seconaryColor;
         }
         p{
-            // @include responsive(Laptop){
-            //     font-size: 9px;
-            // }
             font-size: 11px;
             text-align: center;
         }

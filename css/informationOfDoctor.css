@@ -10,7 +10,7 @@ nav .nav-left {
   align-items: center;
   margin-left: 50px;
 }
-@media screen and (max-width: ) {
+@media screen and (max-width: 1024px) {
   nav .nav-left {
     flex: 0.5;
   }
@@ -29,7 +29,7 @@ nav .nav-right {
 nav .nav-right input {
   display: none;
 }
-@media screen and (max-width: ) {
+@media screen and (max-width: 730px) {
   nav .nav-right #menu__toggle {
     opacity: 0;
   }
@@ -98,7 +98,7 @@ nav .nav-right input {
     background-color: #CFD8DC;
   }
 }
-@media screen and (max-width: ) {
+@media screen and (max-width: 1024px) {
   nav .nav-right {
     flex: 1.5;
   }
@@ -232,8 +232,9 @@ header {
   justify-content: center;
   align-items: center;
   flex: 1;
+  @inclu;
 }
-@media screen and (max-width: ) {
+@media screen and (max-width: 730px) {
   .container .InformationOfdoctor .backgroundOfDoctor img {
     height: 300px;
     width: 280px;
@@ -261,12 +262,12 @@ header {
   width: 80%;
   height: 400px;
 }
-@media screen and (max-width: ) {
+@media screen and (max-width: 1024px) {
   .container .circleImgaeofDoctor .card-image {
     flex-wrap: wrap;
   }
 }
-@media screen and (max-width: ) {
+@media screen and (max-width: 730px) {
   .container .circleImgaeofDoctor .card-image {
     gap: 30px;
   }
@@ -277,12 +278,12 @@ header {
   justify-content: center;
   width: 33%;
 }
-@media screen and (max-width: ) {
+@media screen and (max-width: 730px) {
   .container .circleImgaeofDoctor .card-image .card-image-header {
     width: 50%;
   }
 }
-@media screen and (max-width: ) {
+@media screen and (max-width: 620px) {
   .container .circleImgaeofDoctor .card-image .card-image-header {
     width: 100%;
   }

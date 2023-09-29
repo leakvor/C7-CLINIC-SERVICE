@@ -10,7 +10,7 @@ nav .nav-left {
   align-items: center;
   margin-left: 50px;
 }
-@media screen and (max-width: ) {
+@media screen and (max-width: 1024px) {
   nav .nav-left {
     flex: 0.5;
   }
@@ -29,7 +29,7 @@ nav .nav-right {
 nav .nav-right input {
   display: none;
 }
-@media screen and (max-width: ) {
+@media screen and (max-width: 730px) {
   nav .nav-right #menu__toggle {
     opacity: 0;
   }
@@ -98,7 +98,7 @@ nav .nav-right input {
     background-color: #CFD8DC;
   }
 }
-@media screen and (max-width: ) {
+@media screen and (max-width: 1024px) {
   nav .nav-right {
     flex: 1.5;
   }
@@ -203,31 +203,40 @@ header {
   font-family: sans-serif;
 }
 
-/* Pictures-clinic */
-* {
-  text-decoration: none;
-}
-
 .Pictures-clinic {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 40vh;
+  margin: 50px;
   margin-top: 50px;
 }
-
-.Pictures {
+@media screen and (max-width: 730px) {
+  .Pictures-clinic {
+    flex-direction: column;
+  }
+}
+.Pictures-clinic .Pictures {
   display: flex;
   justify-content: flex-end;
   flex: 1;
 }
-
-.Paragraph {
+.Pictures-clinic .Paragraph {
   flex: 1;
 }
-.Paragraph p {
+@media screen and (max-width: 730px) {
+  .Pictures-clinic .Paragraph {
+    flex: 0;
+  }
+}
+.Pictures-clinic .Paragraph p {
   width: 50%;
   margin-top: 25px;
+}
+@media screen and (max-width: 730px) {
+  .Pictures-clinic .Paragraph p {
+    width: 100%;
+    margin-top: 10px;
+  }
 }
 
 /* table */
@@ -237,7 +246,6 @@ header {
   align-items: center;
   flex-direction: column;
   margin-top: -30px;
-  height: 100vh;
   width: 100%;
 }
 .table-container h1 {
@@ -245,11 +253,6 @@ header {
 }
 .table-container .color {
   color: red;
-}
-
-thead {
-  height: 10vh;
-  background: rgba(192, 190, 190, 0.943);
 }
 
 table {
@@ -260,7 +263,17 @@ table {
   width: 90%;
   background: rgb(171, 215, 239);
 }
-
-table, th, td {
+table thead {
+  height: 10vh;
+  background: rgba(192, 190, 190, 0.943);
+}
+table th,
+table td {
   border: 1px solid black;
+}
+@media screen and (max-width: 730px) {
+  table th,
+  table td {
+    font-size: 11px;
+  }
 }/*# sourceMappingURL=table-schedul.css.map */
