@@ -1,3 +1,13 @@
 @import './main.scss';
 @import './component/services-card';
-
+@import './mixins/responsive';
+header{
+    height: 480px;
+    background-image: url(/image/img-of-content/header-check-health.jpg);
+    background-size: cover;
+    @include responsive(md){
+        height: 230px;
+        
+    }
+    
+}

@@ -252,6 +252,8 @@ header {
 .our-doctor {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
   margin-left: 50px;
   margin-right: 50px;
@@ -282,7 +284,7 @@ header {
 }
 @media screen and (max-width: 1200px) {
   .our-doctor .container-buntton {
-    justify-content: center;
+    justify-content: end;
   }
 }
 @media screen and (max-width: 768px) {
@@ -292,7 +294,7 @@ header {
 }
 .our-doctor .container {
   display: flex;
-  width: 94%;
+  width: 93%;
   gap: 40px;
 }
 @media screen and (max-width: 1200px) {
@@ -318,7 +320,7 @@ header {
   }
 }
 .our-doctor .container .card img {
-  height: 200px;
+  height: 203px;
 }
 .our-doctor .container .card .card-header {
   width: 100%;
@@ -326,11 +328,6 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-@media screen and (max-width: 768px) {
-  .our-doctor .container .card .card-header {
-    margin-left: 20%;
-  }
 }
 .our-doctor .container .card .card-footer {
   background: rgb(171, 215, 239);
@@ -376,6 +373,7 @@ header {
   border-radius: 10px;
   border: none;
   background: blue;
+  color: white;
 }
 .contact-us .check-schedule button a {
   color: white;
@@ -410,7 +408,7 @@ header {
   border: 2px solid rgba(192, 190, 190, 0.943);
   background: rgba(0, 0, 0, 0.3411764706);
 }
-.contact-us .container .form-container header {
+.contact-us .container .form-container .header1 {
   color: white;
 }
 .contact-us .container .form-container form {

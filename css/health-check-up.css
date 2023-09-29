@@ -262,4 +262,15 @@ header {
   .card .card-footer p {
     font-size: 9px;
   }
+}
+
+header {
+  height: 480px;
+  background-image: url(/image/img-of-content/header-check-health.jpg);
+  background-size: cover;
+}
+@media screen and (max-width: 768px) {
+  header {
+    height: 230px;
+  }
 }/*# sourceMappingURL=health-check-up.css.map */
