@@ -10,20 +10,22 @@
     @include between;
     flex-wrap: wrap;
     margin: $mainMargin;
+    @include responsive(Laptop){
+        width: 90%;
+    }
 }
 .card {
     width: 30%;
     height: 340px;
     margin-top: $mainMargin;
     background: $primaryColor;
-    @include responsive(xl){
+    @include responsive(Laptop){
         width: 32%;
     }
-    @include responsive(lg){
+    @include responsive(Tablet){
         width: 48%;
-        height: 320px;
     }
-    @include responsive(md){
+    @include responsive(mobile){
         width: 98%;
     }
 
@@ -37,13 +39,7 @@
             color: $seconaryColor;
         }
         p{
-            @include responsive(lg){
-                font-size: 9px;
-            }
-            @include responsive(md){
-                font-size: 9px;
-            }
-            font-size: 12px;
+            font-size: 11px;
             text-align: center;
         }
     }

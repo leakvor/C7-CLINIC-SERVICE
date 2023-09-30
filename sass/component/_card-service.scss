@@ -13,16 +13,24 @@
     justify-content: center;
     gap: 30px;
     margin: $mainMargin;
-    @include responsive(xl){
-        width: 85%;
-        gap: 50px;
+    @include responsive(Laptop){
+        width: 90%;
+        justify-content: start;
+        
     }
     .card {
-        @include responsive(xl){
-            width: 38%;
+        @include responsive(Laptop){
+            width: 30%; 
+            gap: 27px;
+            height: 200px;
+            
         }
-        @include responsive(md){
-            width: 90%;
+        @include responsive(Tablet){
+            width: 47%;
+            
+        }
+        @include responsive(mobile){
+            width: 98%;
         }
         width: 30%;
         position: relative;

@@ -191,6 +191,11 @@ footer .footer-container .footer-right .contact-footer i {
   }
 }
 
+header {
+  height: 480px;
+  background-size: cover;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -207,20 +212,35 @@ footer .footer-container .footer-right .contact-footer i {
   margin-top: 50px;
   margin-bottom: 50px;
 }
+@media screen and (max-width: 768px) {
+  .contact-us h1 {
+    margin-top: 100px;
+  }
+}
 .contact-us .check-schedule {
   width: 100%;
-  height: 475px;
+  height: 490px;
   background-image: url(/image/img-of-content/form.jpg);
+  background-size: cover;
 }
 .contact-us .check-schedule button {
   width: 150px;
-  padding: 10px;
+  height: 45px;
   margin-top: 30px;
-  margin-left: 70px;
+  margin-left: 50px;
   border-radius: 10px;
   border: none;
-  background: rgb(171, 215, 239);
-  color: rgb(0, 0, 0);
+  background: blue;
+  color: white;
+}
+.contact-us .check-schedule button a {
+  color: white;
+}
+@media screen and (max-width: 768px) {
+  .contact-us .check-schedule button {
+    padding: 5px;
+    margin-bottom: 10px;
+  }
 }
 .contact-us .container {
   display: flex;
@@ -228,16 +248,26 @@ footer .footer-container .footer-right .contact-footer i {
   align-items: end;
   margin-right: 50px;
 }
+@media screen and (max-width: 768px) {
+  .contact-us .container {
+    margin-top: 20px;
+    margin-right: 0px;
+    align-items: center;
+  }
+}
 .contact-us .container .form-container {
   width: 400px;
   height: 350px;
-  background: rgba(168, 162, 162, 0.4666666667);
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   border-radius: 10px;
-  border: 2px solid rgb(70, 68, 68);
+  border: 2px solid rgba(192, 190, 190, 0.943);
+  background: rgba(0, 0, 0, 0.3411764706);
+}
+.contact-us .container .form-container .header1 {
+  color: white;
 }
 .contact-us .container .form-container form {
   display: flex;
@@ -254,18 +284,30 @@ footer .footer-container .footer-right .contact-footer i {
 }
 .contact-us .container .form-container button {
   width: 100px;
-  padding: 10px;
+  height: 45px;
   margin-top: 25px;
   margin-right: 50px;
   border-radius: 10px;
   border: none;
-  background: rgb(90, 202, 240);
+  background: blue;
+  color: white;
 }
 
 .location h1 {
   margin-top: 50px;
   margin-bottom: 60px;
   text-align: center;
+}
+
+header {
+  height: 480px;
+  background-image: url(/image/img-of-content/header-for-contact.jpg);
+  background-size: cover;
+}
+@media screen and (max-width: 768px) {
+  header {
+    height: 230px;
+  }
 }
 
 .working-hour {

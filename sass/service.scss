@@ -1,4 +1,15 @@
 @import './main.scss';
-@import './component/card-service';
+@import './component/services-card';
+@import './mixins/responsive';
+header{
+    height: 480px;
+    background-image: url(/image/img-of-content/heaer-servicce.jpg);
+    background-size: cover;
+    @include responsive(md){
+        height: 230px;
+        
+    }
+    
+}
 
 
