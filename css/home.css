@@ -329,14 +329,6 @@ header {
   justify-content: center;
   align-items: center;
 }
-<<<<<<< HEAD
-=======
-@media screen and (max-width: ) {
-  .our-doctor .container .card .card-header {
-    margin-left: 20%;
-  }
-}
->>>>>>> df8e5c67d5b17d8d2fdae6d5f46bf2edfd49eb0d
 .our-doctor .container .card .card-footer {
   background: rgb(171, 215, 239);
   height: 60px;

@@ -4,44 +4,43 @@
 .container{
     display: flex;
     justify-content: center;
+    align-items: center;
+    height: 140vh;
 }
-.container-card{
-    width: 80%;
-    @include between;
-    flex-wrap: wrap;
-    margin: $mainMargin;
-    @include responsive(Laptop){
-        width: 90%;
-    }
-}
-.card {
-    width: 30%;
-    height: 340px;
-    margin-top: $mainMargin;
-    background: $primaryColor;
-    @include responsive(Laptop){
-        width: 32%;
-    }
-    @include responsive(Tablet){
-        width: 48%;
-    }
-    @include responsive(mobile){
-        width: 98%;
-    }
 
-    .card-footer{
-        @include column;
-        gap: 7px;
-        h5{
-            margin-top: 15px;
-            text-align: center;
-            text-transform: uppercase;
-            color: $seconaryColor;
-        }
-        p{
-            font-size: 11px;
-            text-align: center;
-        }
-    }
+.container-card{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 135vh;
+    width: 80%;
+}
+.card{
+    width: 28%;
+    height: 360px;
+    position: relative;
+    transition: 0.5s ease-in-out;
+    box-shadow: 2px 2px 10px royalblue;
+    border-radius: 10px;
+}
+.card>img{
+    border-radius: 10px 10px 0px 0px;
+}
+.card:hover{
+    transform: translateY(20px);
+}
+.card-footer{
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+.card-footer>h5,
+.card-footer>p
+{
+    text-align: center;
+}
+.card-footer>h5{
+    color: blue;
 }
 

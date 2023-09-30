@@ -1,13 +1,10 @@
 @import './main.scss';
 @import './component/services-card';
 @import './mixins/responsive';
-header{
-    height: 480px;
-    background-image: url(/image/img-of-content/header-check-health.jpg);
+header {
+    display: flex;
+    justify-content: center;
+    background-image: url(./img/cardbody.webp);
     background-size: cover;
-    @include responsive(md){
-        height: 230px;
-        
-    }
-    
+    height: 400px;
 }
