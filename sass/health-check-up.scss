@@ -1,18 +1,33 @@
+@import './component/variable';
+@import './component/group-mxin';
 @import './main.scss';
-<<<<<<< HEAD
-@import './component/services-card';
-@import './mixins/responsive';
-header{
-    height: 480px;
-    background-image: url(/image/img-of-content/header-check-health.jpg);
-    background-size: cover;
-    @include responsive(md){
-        height: 230px;
-        
-    }
-    
-}
-=======
 @import './component/healthCheck-card';
+@import './component/table-health-check.';
+@import './mixins/responsive';
 
->>>>>>> df8e5c67d5b17d8d2fdae6d5f46bf2edfd49eb0d
+header {
+    @include centered2;
+    background-image: url(../image/health-check-up/bagroud.jpg);
+    background-size: cover;
+    height: 400px;
+}
+.image{
+    @include centered;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;    
+    background-color: b;    
+    color: $colorwhite;
+    p{
+        margin-bottom: -100px;
+        font-size: 23px;
+    }
+    b{
+        font-size: 70px;
+    }
+}
+h1{
+    @include centered2;
+    align-items: flex-end;
+    height: 20vh;
+}

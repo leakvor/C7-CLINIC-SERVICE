@@ -77,19 +77,18 @@ nav .nav-right input {
     height: 100%;
     margin: 0;
     padding: 60px 0;
-    background-color: rgb(171, 215, 239);
+    background-color: rgba(14, 59, 98, 0.867);
     box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
     transition-duration: 0.25s;
   }
   nav .nav-right .menu__item {
     display: block;
     padding: 15px 30px;
-    color: #333;
     font-family: "Roboto", sans-serif;
     transition-duration: 0.25s;
   }
   nav .nav-right .menu__item:hover {
-    background-color: #CFD8DC;
+    background-color: #b7c5cb;
   }
 }
 @media screen and (max-width: 1024px) {
@@ -106,6 +105,18 @@ nav .nav-right ul li {
 }
 nav .nav-right ul li a {
   text-decoration: none;
+  font-weight: bold;
+  color: rgba(14, 59, 98, 0.867);
+}
+@media screen and (max-width: 730px) {
+  nav .nav-right ul li a {
+    color: white;
+  }
+}
+nav .nav-right ul li a:hover {
+  background-color: rgb(173, 208, 220);
+  height: 100px;
+  width: 300px;
 }
 
 footer {
@@ -173,7 +184,7 @@ footer .footer-container .footer-right .contact-footer {
   align-items: center;
 }
 footer .footer-container .footer-right .contact-footer i {
-  color: blue;
+  color: gray;
   font-size: 28px;
   text-align: center;
   line-height: 42px;
@@ -317,7 +328,7 @@ header {
 .care .we-care .we-care-left p {
   font-size: 40px;
   font-weight: bold;
-  color: rgb(42, 80, 133);
+  color: rgba(14, 59, 98, 0.867);
 }
 @media screen and (max-width: 1200px) {
   .care .we-care .we-care-left p {
@@ -330,7 +341,7 @@ header {
 .care .we-care .we-care-right p {
   font-size: 15px;
   margin-top: 10px;
-  color: rgb(42, 80, 133);
+  color: rgba(14, 59, 98, 0.867);
 }
 
 .our-service {

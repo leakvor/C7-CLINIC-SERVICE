@@ -1,5 +1,4 @@
 nav {
-  background-color: rgb(171, 215, 239);
   display: flex;
   justify-content: space-between;
 }
@@ -8,16 +7,11 @@ nav .nav-left {
   display: flex;
   justify-content: start;
   align-items: center;
-  margin-left: 50px;
 }
 @media screen and (max-width: 1024px) {
   nav .nav-left {
     flex: 0.5;
   }
-}
-nav .nav-left img {
-  height: 60px;
-  margin-top: 15px;
 }
 nav .nav-right {
   flex: 1;
@@ -179,7 +173,7 @@ footer .footer-container .footer-right .contact-footer {
   align-items: center;
 }
 footer .footer-container .footer-right .contact-footer i {
-  color: blue;
+  color: rgba(36, 36, 238, 0.897);
   font-size: 28px;
   text-align: center;
   line-height: 42px;
@@ -200,7 +194,7 @@ header {
   padding: 0;
   margin: 0;
   list-style-type: none;
-  font-family: sans-serif;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 body {
@@ -251,9 +245,10 @@ body {
   flex-direction: column;
   margin-top: -30px;
   width: 100%;
+  background: rgb(49, 49, 81);
 }
 .table-container h1 {
-  color: blue;
+  color: rgba(36, 36, 238, 0.897);
 }
 .table-container .color {
   color: red;
@@ -265,11 +260,9 @@ table {
   margin-top: 20px;
   height: 60vh;
   width: 90%;
-  background: rgb(171, 215, 239);
 }
 table thead {
   height: 10vh;
-  background: rgba(192, 190, 190, 0.943);
 }
 table th,
 table td {

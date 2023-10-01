@@ -1,47 +1,120 @@
 @import './variable';
 @import './group-mxin';
 @import '../mixins/responsive';
+
 .container{
-    display: flex;
-    justify-content: center;
+    @include centered;
 }
 .container-card{
-    width: 80%;
-    @include between;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     flex-wrap: wrap;
-    margin: $mainMargin;
-    @include responsive(Laptop){
+    height: 133vh;
+    width: 80%;
+    margin-top: 10px;
+    .card{
+        width: 28%;
+        height: 360px;
+        position: relative;
+        transition: 0.5s ease-in-out;
+        box-shadow: 2px 2px 10px gray;
+        border-radius: 10px;
+        img{
+            border-radius: 10px 10px 0px 0px;
+        }
+        .card-footer{
+            display: flex;
+            flex-direction: column;
+            gap: 7px;
+            p{
+                text-align: center;
+                @include responsive (mobile){
+                    display: none;
+                }
+            }
+            h5{
+                margin-top: 7px;
+                text-align: center;
+                color: $seconaryColor;
+            }            
+        }
+    }
+    .card:hover{
+        transform: translateY(20px);
+    }
+}
+
+@include responsive(Laptop){
+    .container-card{
+        margin-top: 10px;
+        height: 122vh;
+        width: 100%;
+        .card{
+            width: 28%;
+            height: 285px;
+            img{
+                height: 30vh;
+            }
+            .card-footer{
+                gap: 7px;
+                p{
+                    font-size: 13px;
+                }
+                h5{
+                    font-size: 12px;
+                }            
+            }
+        }
+    }
+}
+
+@include responsive(Tablet){
+    .container-card{
+        height: 158vh;
         width: 90%;
-    }
-}
-.card {
-    width: 30%;
-    height: 340px;
-    margin-top: $mainMargin;
-    background: $primaryColor;
-    @include responsive(Laptop){
-        width: 32%;
-    }
-    @include responsive(Tablet){
-        width: 48%;
-    }
-    @include responsive(mobile){
-        width: 98%;
-    }
+        .card{
+            width: 42%;
+            height: 255px;
+            img{
+                height: 28vh;
+            }
+        }
+        .card-footer{
+            gap: 7px;
+            p{
+                font-size: 11px;
+            }
+            h5{
+                margin-top: 7px;
 
-    .card-footer{
-        @include column;
-        gap: 7px;
-        h5{
-            margin-top: 15px;
-            text-align: center;
-            text-transform: uppercase;
-            color: $seconaryColor;
+            }            
         }
-        p{
-            font-size: 11px;
-            text-align: center;
-        }
+    }
+    th,td{
+        font-size: 13px;
     }
 }
 
+@include responsive (mobile){
+    .container-card{
+        height: 340vh;
+        width: 100%;
+        .card{
+            width: 70%;
+            height: 285px;
+            img{
+                height: 35vh;
+            }
+        }
+        .card-footer{
+            gap: 7px;
+            p{
+                font-size: 13px;
+            }         
+        }
+    }
+    th,td{
+        font-size: 12px;
+    }
+}

@@ -1,3 +1,4 @@
+
 @import './main';
 @import './component/card-service';
 @import './mixins/responsive';
@@ -7,9 +8,8 @@ header {
     background-size: cover;
     height: 400px;
 }
-
 .image {
-    background-color: rgba(14, 59, 98, 0.867);
+    background-color: $mainColor;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -19,8 +19,6 @@ header {
 
     p {
         font-size: 23px;
-        
-        
     }
 
     b {
@@ -32,9 +30,7 @@ header {
 }
 
 .care {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include centered;
     .we-care {
         display: flex;
         @include responsive(Desktop) {
@@ -52,7 +48,7 @@ header {
             p {
                 font-size: 40px;
                 font-weight: bold;
-                color: rgb(42, 80, 133);
+                color: $mainColor;
 
                 @include responsive(Desktop) {
                     font-size: 30px;
@@ -60,14 +56,12 @@ header {
                 }
             }
         }
-
         .we-care-right {
             flex: 4;
-
             p {
                 font-size: 15px;
                 margin-top: 10px;
-                color: rgb(42, 80, 133);
+                color:$mainColor;
             }
         }
     }
@@ -80,7 +74,7 @@ header {
 
     .title {
         h1 {
-            color: rgba(14, 59, 98, 0.867);
+            color: $mainColor;
         }
     }
 
@@ -102,7 +96,6 @@ header {
             }
 
             @include responsive(Tablet) {
-                // background: #000;
                 height: 250px;
             }
             @include responsive(mobile) {
@@ -117,7 +110,7 @@ header {
 
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        box-shadow: 1px 1px 5px 1px rgb(203, 30, 30);
+        box-shadow: 1px 1px 5px 1px $primaryColor;
     }
 
     .feedback-right {
@@ -139,10 +132,7 @@ header {
                 font-size: 20px;
             }
             @include responsive(mobile) {
-                // margin-left: 24%;
             }
-            
-
             margin-top: 90px;
         }
 

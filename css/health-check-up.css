@@ -1,5 +1,4 @@
 nav {
-  background-color: rgb(171, 215, 239);
   display: flex;
   justify-content: space-between;
 }
@@ -8,16 +7,11 @@ nav .nav-left {
   display: flex;
   justify-content: start;
   align-items: center;
-  margin-left: 50px;
 }
 @media screen and (max-width: 1024px) {
   nav .nav-left {
     flex: 0.5;
   }
-}
-nav .nav-left img {
-  height: 60px;
-  margin-top: 15px;
 }
 nav .nav-right {
   flex: 1;
@@ -83,7 +77,7 @@ nav .nav-right input {
     height: 100%;
     margin: 0;
     padding: 60px 0;
-    background-color: rgb(171, 215, 239);
+    background-color: rgba(14, 59, 98, 0.867);
     box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
     transition-duration: 0.25s;
   }
@@ -112,6 +106,18 @@ nav .nav-right ul li {
 }
 nav .nav-right ul li a {
   text-decoration: none;
+  font-weight: bold;
+  color: rgba(14, 59, 98, 0.867);
+}
+@media screen and (max-width: 730px) {
+  nav .nav-right ul li a {
+    color: white;
+  }
+}
+nav .nav-right ul li a:hover {
+  background-color: rgb(173, 208, 220);
+  height: 100px;
+  width: 300px;
 }
 
 footer {
@@ -179,7 +185,7 @@ footer .footer-container .footer-right .contact-footer {
   align-items: center;
 }
 footer .footer-container .footer-right .contact-footer i {
-  color: blue;
+  color: rgba(36, 36, 238, 0.897);
   font-size: 28px;
   text-align: center;
   line-height: 42px;
@@ -200,7 +206,7 @@ header {
   padding: 0;
   margin: 0;
   list-style-type: none;
-  font-family: sans-serif;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 body {
@@ -210,78 +216,199 @@ body {
 .container {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .container-card {
-  width: 80%;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  align-items: center;
   flex-wrap: wrap;
-  margin: 50px;
+  height: 133vh;
+  width: 80%;
+  margin-top: 10px;
 }
-@media screen and (max-width: 1024px) {
-  .container-card {
-    width: 90%;
-  }
+.container-card .card {
+  width: 28%;
+  height: 360px;
+  position: relative;
+  transition: 0.5s ease-in-out;
+  box-shadow: 2px 2px 10px gray;
+  border-radius: 10px;
 }
-
-.card {
-  width: 30%;
-  height: 340px;
-  margin-top: 50px;
-  background: rgba(192, 190, 190, 0.943);
+.container-card .card img {
+  border-radius: 10px 10px 0px 0px;
 }
-@media screen and (max-width: 1024px) {
-  .card {
-    width: 32%;
-  }
-}
-@media screen and (max-width: 730px) {
-  .card {
-    width: 48%;
-  }
-}
-@media screen and (max-width: 620px) {
-  .card {
-    width: 98%;
-  }
-}
-.card .card-footer {
+.container-card .card .card-footer {
   display: flex;
   flex-direction: column;
   gap: 7px;
 }
-.card .card-footer h5 {
-  margin-top: 15px;
+.container-card .card .card-footer p {
   text-align: center;
-  text-transform: uppercase;
-  color: blue;
 }
-.card .card-footer p {
-  font-size: 11px;
-  text-align: center;
-<<<<<<< HEAD
-}
-@media screen and (max-width: 992px) {
-  .card .card-footer p {
-    font-size: 9px;
+@media screen and (max-width: 620px) {
+  .container-card .card .card-footer p {
+    display: none;
   }
 }
-@media screen and (max-width: 768px) {
-  .card .card-footer p {
-    font-size: 9px;
+.container-card .card .card-footer h5 {
+  margin-top: 7px;
+  text-align: center;
+  color: rgba(36, 36, 238, 0.897);
+}
+.container-card .card:hover {
+  transform: translateY(20px);
+}
+
+@media screen and (max-width: 1024px) {
+  .container-card {
+    margin-top: 10px;
+    height: 122vh;
+    width: 100%;
+  }
+  .container-card .card {
+    width: 28%;
+    height: 285px;
+  }
+  .container-card .card img {
+    height: 30vh;
+  }
+  .container-card .card .card-footer {
+    gap: 7px;
+  }
+  .container-card .card .card-footer p {
+    font-size: 13px;
+  }
+  .container-card .card .card-footer h5 {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 730px) {
+  .container-card {
+    height: 158vh;
+    width: 90%;
+  }
+  .container-card .card {
+    width: 42%;
+    height: 255px;
+  }
+  .container-card .card img {
+    height: 28vh;
+  }
+  .container-card .card-footer {
+    gap: 7px;
+  }
+  .container-card .card-footer p {
+    font-size: 11px;
+  }
+  .container-card .card-footer h5 {
+    margin-top: 7px;
+  }
+  th, td {
+    font-size: 13px;
+  }
+}
+@media screen and (max-width: 620px) {
+  .container-card {
+    height: 340vh;
+    width: 100%;
+  }
+  .container-card .card {
+    width: 70%;
+    height: 285px;
+  }
+  .container-card .card img {
+    height: 35vh;
+  }
+  .container-card .card-footer {
+    gap: 7px;
+  }
+  .container-card .card-footer p {
+    font-size: 13px;
+  }
+  th, td {
+    font-size: 12px;
+  }
+}
+.table-container {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.table-container table {
+  width: 80%;
+  border-collapse: collapse;
+}
+@media screen and (max-width: 730px) {
+  .table-container table {
+    width: 90%;
   }
 }
 
-header {
-  height: 480px;
-  background-image: url(/image/img-of-content/header-check-health.jpg);
-  background-size: cover;
+thead {
+  color: white;
 }
-@media screen and (max-width: 768px) {
-  header {
-    height: 230px;
-  }
-=======
->>>>>>> df8e5c67d5b17d8d2fdae6d5f46bf2edfd49eb0d
+
+td,
+th {
+  padding: 10px;
+  text-align: center;
+  border: 1px solid white;
+}
+
+tbody {
+  background-color: rgba(34, 29, 90, 0.79);
+  color: white;
+  font-weight: bold;
+}
+
+tbody:hover {
+  background-color: rgb(31, 38, 40);
+}
+
+thead th:nth-child(odd) {
+  background-color: rgb(15, 15, 84);
+}
+
+thead th:nth-child(even) {
+  background-color: rgb(7, 236, 60);
+}
+
+.material-icons {
+  color: white;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  background-image: url(../image/health-check-up/bagroud.jpg);
+  background-size: cover;
+  height: 400px;
+}
+
+.image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(14, 59, 98, 0.867);
+  color: white;
+}
+.image p {
+  margin-bottom: -100px;
+  font-size: 23px;
+}
+.image b {
+  font-size: 70px;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  height: 20vh;
 }/*# sourceMappingURL=health-check-up.css.map */

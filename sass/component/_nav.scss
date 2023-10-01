@@ -14,10 +14,6 @@ nav {
             flex: 0.5;
         }
 
-        img {
-          
-        }
-
     }
 
     .nav-right {
@@ -90,12 +86,11 @@ nav {
               .menu__item {
                 display: block;
                 padding: 15px 30px;
-                color: #333;
                 font-family: 'Roboto', sans-serif;
                 transition-duration: .25s;
               }
               .menu__item:hover {
-                background-color: #CFD8DC;
+                background-color: #b7c5cb;
               }
         }
         @include responsive(Laptop){
@@ -110,6 +105,16 @@ nav {
 
                 a {
                     text-decoration: none;
+                    font-weight: bold;
+                    color: rgba(14, 59, 98, 0.867);
+                    @include responsive(Tablet){
+                      color: white;
+                    }
+                }
+                a:hover{
+                  background-color: rgb(173, 208, 220);
+                  height: 100px;
+                  width: 300px;
                 }
             }
         }
