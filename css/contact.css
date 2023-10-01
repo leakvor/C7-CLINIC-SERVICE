@@ -219,7 +219,7 @@ body {
 .contact .contactUs {
   width: 70%;
   display: flex;
-  background: rgba(35, 52, 104, 0.8274509804);
+  background: rgba(14, 59, 98, 0.867);
   color: aliceblue;
   box-shadow: 1px 5px 2px 0px rgb(220, 219, 219);
 }
@@ -265,6 +265,7 @@ body {
 }
 .contact .contactUs .contactUs-right h3 {
   margin-top: 10px;
+  margin-bottom: 20px;
 }
 .contact .contactUs .contactUs-right .formBox {
   position: relative;
