@@ -3,7 +3,6 @@
 @import '../mixins/responsive';
 
 .form-contect {
-    
     margin-top: -40px;
     height: 550px;
     display: flex;
@@ -34,14 +33,18 @@
 
         .card-container-icon {
             .card-icon {
-                background: rgb(220, 236, 241);
+                background: $mainColor;
                 height: 100px;
                 width: 450px;
                 margin-top: 25px;
                 display: flex;
                 align-items: center;
                 border-radius: 10px;
-
+                p{
+                    b{
+                        color: white;
+                    }
+                }
                 .back-ground-icon {
                     background: rgb(255, 255, 255);
                     width: 50px;
@@ -62,7 +65,7 @@
             margin-top: 20px;
             padding: 15px;
             border-radius: 5px;
-            background: skyblue;
+            background: rgb(5, 186, 171);
             border: 1px solid darkblue;
             margin-right: 340px;
         }
@@ -72,7 +75,7 @@
         width: 600px;
         height: 440px;
         border: 1px solid black;
-        background: rgb(230, 243, 247);
+        background: $mainColor;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -136,7 +139,7 @@
                 margin: 15px;
                 border-radius: 5px;
                 border: 1px solid darkblue;
-                background: skyblue;
+                background: rgb(5, 186, 171);
             }
 
 

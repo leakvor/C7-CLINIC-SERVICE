@@ -120,7 +120,7 @@ nav .nav-right ul li a:hover {
 }
 
 .footer-distributed {
-  background: white;
+  background: whitesmoke;
   margin-top: -5px;
 }
 @media screen and (max-width: 620px) {
@@ -315,8 +315,8 @@ body {
 }
 .card-container .card {
   width: 370px;
-  height: 270px;
-  background: rgb(83, 194, 238);
+  height: 350px;
+  background-color: white;
   border-radius: 15px;
   border: 1px solid darkblue;
 }
@@ -332,7 +332,7 @@ body {
   align-items: center;
 }
 .card-container .card .card-header .card-header-style {
-  background: white;
+  background: #aeacac;
   width: 70px;
   height: 60%;
   border-radius: 100%;
@@ -538,13 +538,16 @@ body {
   margin-left: 10px;
 }
 .form-contect .form-left .card-container-icon .card-icon {
-  background: rgb(220, 236, 241);
+  background: rgba(14, 59, 98, 0.867);
   height: 100px;
   width: 450px;
   margin-top: 25px;
   display: flex;
   align-items: center;
   border-radius: 10px;
+}
+.form-contect .form-left .card-container-icon .card-icon p b {
+  color: white;
 }
 .form-contect .form-left .card-container-icon .card-icon .back-ground-icon {
   background: rgb(255, 255, 255);
@@ -564,7 +567,7 @@ body {
   margin-top: 20px;
   padding: 15px;
   border-radius: 5px;
-  background: skyblue;
+  background: rgb(5, 186, 171);
   border: 1px solid darkblue;
   margin-right: 340px;
 }
@@ -572,7 +575,7 @@ body {
   width: 600px;
   height: 440px;
   border: 1px solid black;
-  background: rgb(230, 243, 247);
+  background: rgba(14, 59, 98, 0.867);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -637,7 +640,7 @@ body {
   margin: 15px;
   border-radius: 5px;
   border: 1px solid darkblue;
-  background: skyblue;
+  background: rgb(5, 186, 171);
 }
 
 .location h1 {
@@ -692,12 +695,28 @@ body {
 }
 
 header {
-  height: 480px;
   background-image: url(/image/img-of-content/banner3.jpg);
   background-size: cover;
+  height: 400px;
 }
-@media screen and (max-width: ) {
-  header {
-    height: 230px;
+
+.image {
+  background-color: rgba(14, 59, 98, 0.867);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+.image p {
+  font-size: 23px;
+}
+.image b {
+  font-size: 70px;
+}
+@media screen and (max-width: 620px) {
+  .image b {
+    font-size: 60px;
   }
 }/*# sourceMappingURL=home.css.map */

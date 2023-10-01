@@ -28,8 +28,8 @@
 
     .card {
         width: 370px;
-        height: 270px;
-        background: rgb(83, 194, 238);
+        height: 350px;
+        background-color: white;
         border-radius: 15px;
         border: 1px solid darkblue;
 
@@ -44,7 +44,7 @@
             @include centered;
 
             .card-header-style {
-                background: white;
+                background: #aeacac;
                 width: 70px;
                 height: 60%;
                 border-radius: 100%;

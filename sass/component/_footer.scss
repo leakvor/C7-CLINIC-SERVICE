@@ -3,7 +3,7 @@
 @import '../mixins/responsive';
 
 .footer-distributed {
-    background: white;
+    background:whitesmoke;
     margin-top: -5px;
     @include responsive(mobile){
         background: #e2dada;
