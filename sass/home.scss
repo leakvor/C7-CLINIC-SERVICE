@@ -1,8 +1,10 @@
 @import './main';
 @import './content/whyTheyChooseUs';
 @import './content/ourDoctor';
-@import './component/feedback';
+@import './content/feedback';
+@import './content/MakeAppointment';
 @import "./component/location";
+@import './content/ourcare';
 @import './mixins/responsive';
 
 header{

@@ -2,96 +2,123 @@
 @import '../component/group-mxin';
 @import '../mixins/responsive';
 
-.our-doctor {
-    @include column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+.doctor {
+    @include centered;
+    flex-direction: column;
 
-    margin: {
-        left: 50px;
-        right: 50px;
+    h2 {
+        margin-top: 70px;
+        margin-bottom: 70px;
     }
 
-    h1 {
-        @include margin;
-        color: $seconaryColor;
-    }
-
-    .container-buntton {
-        button{
-            height: 40px;
-            width: 150px;
-            margin-right: 5px;
-            border-radius: 10px;
-            background: $mainColor;
-            border: none;
-        }
-        @include responsive(xl) {
-            flex-direction: row,
-        }
-
-        display: flex;
-        justify-content: end;
+    .container2 {
         width: 100%;
-        margin-bottom: 50px;
-
-        @include responsive(xl) {
-            justify-content: end;
-        }
-
-        @include responsive(md) {
-            display: none;
-        }
-    }
-
-    .container {
         display: flex;
-        width: 93%;
-        gap: 40px;
-
-        @include responsive(xl) {
-            gap: 95px;
+        margin-left: 50px;
+        margin-right: 50px;
+        @include responsive(Tablet){
             flex-wrap: wrap;
-            align-items: center;
-            justify-content: center;
         }
+    }
 
-        .card {
-            height: 270px;
-            width: 24%;
+    .wrapper,
+    .card2 {
+        height: 400px;
+        width: 270px;
+        margin: auto;
+        position: relative;
+    }
 
-            @include responsive(xl) {
-                width: 33%;
-            }
+    .wrapper {
+        perspective: 900px;
 
-            @include responsive(md) {
-                width: 90%;
-            }
-            img {
-                height: 203px;
-            }
-            .card-header {
-                width: 100%;
-                height: 200px;
-                @include centered;
-
-            }
-
-            .card-footer {
-                @include responsive(xl) {
-                    height: 75px;
-                }
-
-                background: $mainColor;
-                height: 60px;
-                @include centered;
-                flex-direction: column;
-                border-radius: $borderRadius;
-                gap: $borderRadius;
-            }
+        .card2 {
+            text-align: center;
+            transition: all 1.2s cubic-bezier(0.7, -.5, 0.3, 1.8);
+            transform-style: preserve-3d;
         }
+    }
+
+    .wrapper:hover .card2 {
+        transform: rotateY(180deg);
+    }
+
+    .front1,
+    .front2,
+    .front3,
+    .front4,
+    .back {
+        width: 270px;
+        position: relative;
+        top: 0;
+        left: 0;
+        backface-visibility: hidden;
+    }
+
+    .front1 {
+        cursor: pointer;
+        height: 80%;
+        background-image: url(/image/doctor-has-bg/doctor01.webp);
+        backface-visibility: hidden;
+        border-radius: 10px;
+        background-size: cover;
+        background-position: center center;
+    }
+
+    .front2 {
+        cursor: pointer;
+        height: 80%;
+        background-image: url(/image/doctor-has-bg/doctor02.jpg);
+        backface-visibility: hidden;
+        border-radius: 10px;
+        background-size: cover;
+        background-position: center center;
 
     }
 
+    .front3 {
+        cursor: pointer;
+        height: 80%;
+        background-image: url(/image/doctor-has-bg/doctor3.jpg);
+        backface-visibility: hidden;
+        border-radius: 10px;
+        background-size: cover;
+        background-position: center center;
+    }
+
+    .front4 {
+        cursor: pointer;
+        height: 80%;
+        background-image: url(/image/doctor-has-bg/doctor.jpg);
+        backface-visibility: hidden;
+        border-radius: 10px;
+        background-size: cover;
+        background-position: center center;
+    }
+    .back {
+        transform: rotateY(180deg);
+        position: absolute;
+        border-radius: 10px;
+        height: 360px;
+        background: rgb(233, 233, 233);
+        border: 1px solid darkblue;
+    }
+    .content {
+        padding-top: 18%;
+    }
+    .content h2 {
+        font-size: 35px;
+        margin: 0;
+        font-weight: 300;
+    }
+    .contnet h4 {
+        margin: 0;
+    }
+    .contnet p {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .socials-media {
+    margin-top: 20%;
+}
 }

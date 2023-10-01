@@ -1,0 +1,36 @@
+@import '../component/group-mxin';
+@import '../component/variable';
+.service{
+    @include centered;
+	flex-direction: column;
+    h2{
+        @include margin;
+    }
+    .service-container{
+        @include centered;
+        flex-wrap: wrap;
+        gap: 30px;
+        .service-card{
+            @include centered;
+            flex-direction: column;
+            width:370px;
+            height: 210px;
+            border-radius: 15px;
+            background-color: white;
+            border: 1px solid darkblue;
+            .service-card-imge{
+                flex: 2;
+                @include centered;
+                gap: 10px;
+                margin-top: 30px;
+            }
+            .service-card-footer{
+                flex: 1;
+                margin: 20px 20px 10px 20px;
+                .material-icons{
+                    color: rgb(27, 40, 80);
+                }
+            }
+        }
+    }
+}

@@ -2,48 +2,78 @@
 @import '../component/group-mxin';
 @import '../mixins/responsive';
 
-.why-they-choose-us {
-    @include column;
-    align-items: center;
-    margin: {
-        left: $mainMargin;
-        right: $mainMargin;
-    };
-    h1 {
-        @include margin;
-        color: $seconaryColor;
-        
-    }
-    .card-container {
-        @include responsive(md){
-           flex-wrap: wrap;
-        }
-        display: flex;
-        gap: 40px;
-        .card {
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            @include responsive(md){
-                width: 45%;
-            }
-            @include responsive(sm){
-                width: 97%;
-                p{
-                    font-size: 25px;
-                }
-            }
-            width: 25%;
-            display: flex;
-            p {
-                margin-top: 20px;
-                text-align: center;
-                
-            }
-        }
-    
+.card-container {
+    display: flex;
+
+    margin-left: 50px;
+    justify-content: center;
+    gap: 20px;
+    @include margin;
+    margin-top: -60px;
+    width: 100%;
+
+    @include responsive(Tablet) {
+        flex-wrap: wrap;
+
     }
 
+    .card:nth-child(4) {
+        margin-right: 100px;
+
+        @include responsive(Tablet) {
+            margin-right: 50px;
+
+        }
+    }
+
+    .card {
+        width: 370px;
+        height: 270px;
+        background: rgb(83, 194, 238);
+        border-radius: 15px;
+        border: 1px solid darkblue;
+
+        @include responsive(Tablet) {
+            margin-right: 50px;
+
+        }
+
+
+        .card-header {
+            height: 120px;
+            @include centered;
+
+            .card-header-style {
+                background: white;
+                width: 70px;
+                height: 60%;
+                border-radius: 100%;
+                @include centered;
+
+                i {
+                    font-size: 35px;
+                    color: darkblue;
+                }
+
+            }
+        }
+    }
+
+    .card-footer {
+        h4 {
+            text-align: center;
+            margin-top: $marginTen;
+            margin-bottom: 25px;
+            margin-left: $marginTen;
+            margin-right: $marginTen;
+        }
+
+        p {
+            text-align: center;
+            margin-left: $marginTen;
+            margin-right: $marginTen;
+        }
+    }
 }
 
 

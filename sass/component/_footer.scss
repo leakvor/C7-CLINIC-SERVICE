@@ -1,68 +1,142 @@
 @import './variable';
 @import './group-mxin';
 @import '../mixins/responsive';
-footer {
-    background: skyblue;
-    margin-top: -5PX;
-    
-    .footer-container {
-        margin-left: $mainMargin;
-        margin-right: $mainMargin;
-        height: 100%;
-        @include between;
-        
-        gap: 50px;
-        @include responsive(xl){
-            gap: 30px;
-        }
-        @include responsive(md){
-            flex-wrap: wrap;
-            align-items: center;
-            justify-content: center;
+
+.footer-distributed {
+    background: white;
+    margin-top: -5px;
+    @include responsive(mobile){
+        background: #e2dada;
+    }
+    .footer-left,
+    .footer-center,
+    .footer-right {
+        display: inline-block;
+        margin-bottom: 50px;
+        @include responsive(Tablet){
+            margin-bottom: 10px;
         }
 
-        .footer-left{
-            width: 380px;
-            margin-top: $mainMargin;
-            margin-bottom: $mainMargin;
-            @include responsive(xl){
-                width: 300px;
+    }
+
+    .footer-left {
+        width: 40%;
+        margin-top: 50px;
+        img {
+            width: 250px;
+        }
+        @include responsive(Tablet){
+            display: none;
+        }
+    }
+
+    .footer-center {
+        width: 35%;
+        @include responsive(Tablet){
+            width: 50%;
+        }
+        @include responsive(mobile){
+            width: 90%;
+            margin-left: 70px;
+        }
+        i {
+            @include responsive(Laptop){
+                width: 35px;
             }
-            @include responsive (md){
-                @include centered;
-                margin-top:$mainMargin;
-                margin-bottom: 0px;
+            @include responsive(Tablet){
+                width: 30px;
+            }
+            background-color: #33383b;
+            color: #ffffff;
+            font-size: 25px;
+            width: 38px;
+            height: 38px;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 42px;
+            margin: 10px 15px;
+            vertical-align: middle;
+
+            .fa-envelope {
+                font-size: 17px;
+                line-height: 38px;
+            }
+        }
+
+        p {
+            display: inline-block;
+            font-weight: 400;
+            vertical-align: middle;
+            margin: 0;
+
+            span {
+                display: block;
+                font-weight: normal;
+                font-size: 14px;
+                line-height: 2;
             }
 
-            img {
-                width: 200px;
-                margin-bottom: 110px;
-                @include responsive (md){
+            a {
+                color: rgb(0, 0, 0);
+                text-decoration: none;
+                ;
+
+            }
+        }
+    }
+
+    .footer-right {
+        width: 20%;
+        @include responsive(Tablet){
+            width: 48%;
+        }
+        @include responsive (mobile){
+            margin-left: 75px;
+        }
+        .footer-company-about {
+            line-height: 20px;
+            color: #92999f;
+            font-size: 13px;
+            font-weight: normal;
+            margin: 0;
+
+            span {
+                @include responsive(Desktop){
                     margin-bottom: 0px;
                 }
+                display: block;
+                color: #000000;
+                font-size: 14px;
+                font-weight: bold;
+                margin-bottom: 20px;
             }
         }
-        .footer-right {
-            margin-top: $mainMargin;
-            margin-bottom: $mainMargin;
-            width: 380px;
-            @include centered;
-            .contact-footer {
-                display: flex;
-                align-items: center;
-                i {
-                    color: $seconaryColor;
-                    font-size: 28px;
-                    text-align: center;
-                    line-height: 42px;
-                    margin: 10px 15px;
+
+        .footer-icons {
+            margin-top: 25px;
+            @include responsive(Laptop){
+                margin: 0px;
+            }
+            a {
+                @include responsive(Laptop){
+                    width: 25px;
                 }
+                @include responsive(Tablet){
+                    width: 20px;
+                }
+                display: inline-block;
+                width: 35px;
+                height: 35px;
+                cursor: pointer;
+                background-color: #33383b;
+                border-radius: 2px;
+                font-size: 20px;
+                color: #ffffff;
+                text-align: center;
+                line-height: 35px;
+                margin-right: 3px;
+                margin-bottom: 5px;
             }
-            @include responsive(md){
-                margin-top: 0px;
-            }
-        }   
+        }
     }
 }
-
-   

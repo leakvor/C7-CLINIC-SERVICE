@@ -11,26 +11,32 @@
     h2 {
         align-self: center;
     }
+
     .contactUs {
         width: 70%;
         display: flex;
-        background:$mainColor;
+        background: $mainColor;
         color: aliceblue;
         box-shadow: 1px 5px 2px 0px gray;
-        @include responsive(Laptop){
+
+        @include responsive(Laptop) {
             width: 85%;
         }
-        @include responsive(Tablet){
+
+        @include responsive(Tablet) {
             flex-direction: column;
         }
+
         .contactUs-left {
             flex: 0.7;
             @include column;
             margin-left: 20px;
             gap: 30px;
+
             h2 {
                 margin-bottom: 20px;
-                @include responsive(Laptop){
+
+                @include responsive(Laptop) {
                     font-size: 22px;
                     margin-top: 10px;
                 }
@@ -40,12 +46,15 @@
         .contactUs-right {
             flex: 1;
             margin-top: 60px;
-            @include responsive(Laptop){
+
+            @include responsive(Laptop) {
                 margin-top: 75px;
             }
-            @include responsive(Tablet){
+
+            @include responsive(Tablet) {
                 margin-top: 30px;
             }
+
             h3 {
                 margin-top: 10px;
                 margin-bottom: 20px;
@@ -60,7 +69,8 @@
                 .row50 {
                     display: flex;
                     gap: 30px;
-                    @include responsive(Laptop){
+
+                    @include responsive(Laptop) {
                         gap: 10px;
                     }
 
@@ -70,31 +80,40 @@
                         width: 50%;
                         border-bottom: 10px;
 
+                        @include responsive(mobile) {
+                            width: 10%;
+                        }
+
                         input {
                             padding: 10px;
                             background-color: rgb(229, 233, 235);
-                            @include responsive(Laptop){
+                            @include responsive(Laptop) {
                                 padding: 6px;
                             }
+
+
                         }
                     }
                 }
+            }
 
-                button {
-                    width: 30%;
-                    height: 30px;
-                    border-radius: 10px;
-                    border: none;
-                    background-color: rgb(158, 237, 237);
-                    a{
-                        text-decoration: none;
-                        color: white;
-                    }
+            button {
+                width: 30%;
+                height: 30px;
+                border-radius: 10px;
+                border: none;
+                background-color: rgb(158, 237, 237);
+
+                a {
+                    text-decoration: none;
+                    color: white;
                 }
             }
         }
     }
 }
-textarea{
+}
+
+textarea {
     width: 99.5%;
 }

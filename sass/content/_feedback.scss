@@ -1,0 +1,43 @@
+@import '../component/variable';
+@import '../component/group-mxin';
+@import '../mixins/responsive';
+.feed-back {
+    width: 100%;
+    margin-top: $mainMargin;
+    background-image: url(/image/img-of-content/img-form.jpg);
+    background-position: center;
+    background-size: cover;
+    @include centered;
+
+    form {
+        width: 35%;
+
+        h3 {
+            text-align: center;
+            margin: 20px;
+            color: blue;
+        }
+
+        .input-group {
+            margin-bottom: 30px;
+
+            input,
+            textarea {
+                width: 100%;
+                padding: 5px;
+                border: 2px solid;
+                font-size: 15px;
+            }
+        }
+
+        button {
+            padding: 10px 0;
+            color: white;
+            background-color: $seconaryColor;
+            border: 1px solid white;
+            width: 100%;
+            cursor: pointer;
+            margin-bottom: 20px;
+        }
+    }
+}
