@@ -217,12 +217,21 @@ body {
   align-self: center;
 }
 .contact .contactUs {
-  height: 500px;
   width: 70%;
   display: flex;
   background: rgba(35, 52, 104, 0.8274509804);
   color: aliceblue;
   box-shadow: 1px 5px 2px 0px rgb(220, 219, 219);
+}
+@media screen and (max-width: 1024px) {
+  .contact .contactUs {
+    width: 85%;
+  }
+}
+@media screen and (max-width: 730px) {
+  .contact .contactUs {
+    flex-direction: column;
+  }
 }
 .contact .contactUs .contactUs-left {
   flex: 0.7;
@@ -234,9 +243,25 @@ body {
 .contact .contactUs .contactUs-left h2 {
   margin-bottom: 20px;
 }
+@media screen and (max-width: 1024px) {
+  .contact .contactUs .contactUs-left h2 {
+    font-size: 22px;
+    margin-top: 10px;
+  }
+}
 .contact .contactUs .contactUs-right {
   flex: 1;
   margin-top: 60px;
+}
+@media screen and (max-width: 1024px) {
+  .contact .contactUs .contactUs-right {
+    margin-top: 75px;
+  }
+}
+@media screen and (max-width: 730px) {
+  .contact .contactUs .contactUs-right {
+    margin-top: 30px;
+  }
 }
 .contact .contactUs .contactUs-right h3 {
   margin-top: 10px;
@@ -252,6 +277,11 @@ body {
   display: flex;
   gap: 30px;
 }
+@media screen and (max-width: 1024px) {
+  .contact .contactUs .contactUs-right .formBox .row50 {
+    gap: 10px;
+  }
+}
 .contact .contactUs .contactUs-right .formBox .row50 .inputBox {
   display: flex;
   flex-direction: column;
@@ -261,6 +291,11 @@ body {
 .contact .contactUs .contactUs-right .formBox .row50 .inputBox input {
   padding: 10px;
   background-color: rgb(229, 233, 235);
+}
+@media screen and (max-width: 1024px) {
+  .contact .contactUs .contactUs-right .formBox .row50 .inputBox input {
+    padding: 6px;
+  }
 }
 .contact .contactUs .contactUs-right .formBox button {
   width: 30%;
@@ -299,6 +334,21 @@ header .image p {
   margin-bottom: -100px;
   font-size: 23px;
 }
+@media screen and (max-width: 730px) {
+  header .image p {
+    display: none;
+  }
+}
 header .image b {
   font-size: 70px;
+}
+@media screen and (max-width: 1024px) {
+  header .image b {
+    font-size: 50px;
+  }
+}
+@media screen and (max-width: 730px) {
+  header .image b {
+    font-size: 30px;
+  }
 }/*# sourceMappingURL=contact.css.map */

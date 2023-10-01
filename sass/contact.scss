@@ -21,10 +21,19 @@ header {
         p {
             margin-bottom: -100px;
             font-size: 23px;
+            @include responsive(Tablet){
+                display: none;
+            }
         }
 
         b {
             font-size: 70px;
+            @include responsive(Laptop){
+                font-size: 50px;
+            }
+            @include responsive(Tablet){
+                font-size: 30px;
+            }
         }
     }
 
