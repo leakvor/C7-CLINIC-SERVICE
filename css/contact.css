@@ -207,94 +207,71 @@ body {
   background-color: rgb(241, 248, 249);
 }
 
-.contact-us {
+.contact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -100px;
+}
+.contact h2 {
+  align-self: center;
+}
+.contact .contactUs {
+  height: 500px;
+  width: 70%;
+  display: flex;
+  background: rgba(35, 52, 104, 0.8274509804);
+  color: aliceblue;
+  box-shadow: 1px 5px 2px 0px rgb(220, 219, 219);
+}
+.contact .contactUs .contactUs-left {
+  flex: 0.7;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  margin-left: 20px;
+  gap: 30px;
 }
-.contact-us h1 {
-  margin-top: 50px;
-  margin-bottom: 50px;
+.contact .contactUs .contactUs-left h2 {
+  margin-bottom: 20px;
 }
-@media screen and (max-width: ) {
-  .contact-us h1 {
-    margin-top: 100px;
-  }
+.contact .contactUs .contactUs-right {
+  flex: 1;
+  margin-top: 60px;
 }
-.contact-us .check-schedule {
+.contact .contactUs .contactUs-right h3 {
+  margin-top: 10px;
+}
+.contact .contactUs .contactUs-right .formBox {
+  position: relative;
   width: 100%;
-  height: 490px;
-  background-image: url(/image/img-of-content/form.jpg);
-  background-size: cover;
-}
-.contact-us .check-schedule button {
-  width: 150px;
-  height: 45px;
-  margin-top: 30px;
-  margin-left: 50px;
-  border-radius: 10px;
-  border: none;
-  background: blue;
-  color: white;
-}
-.contact-us .check-schedule button a {
-  color: white;
-}
-@media screen and (max-width: ) {
-  .contact-us .check-schedule button {
-    padding: 5px;
-    margin-bottom: 10px;
-  }
-}
-.contact-us .container {
   display: flex;
   flex-direction: column;
-  align-items: end;
-  margin-right: 50px;
+  gap: 20px;
 }
-@media screen and (max-width: ) {
-  .contact-us .container {
-    margin-top: 20px;
-    margin-right: 0px;
-    align-items: center;
-  }
-}
-.contact-us .container .form-container {
-  width: 400px;
-  height: 350px;
+.contact .contactUs .contactUs-right .formBox .row50 {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  border-radius: 10px;
-  border: 2px solid rgba(192, 190, 190, 0.943);
-  background: rgba(0, 0, 0, 0.3411764706);
+  gap: 30px;
 }
-.contact-us .container .form-container .header1 {
-  color: white;
-}
-.contact-us .container .form-container form {
+.contact .contactUs .contactUs-right .formBox .row50 .inputBox {
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
+  width: 50%;
+  border-bottom: 10px;
 }
-.contact-us .container .form-container form input {
-  margin-top: 25px;
+.contact .contactUs .contactUs-right .formBox .row50 .inputBox input {
   padding: 10px;
-  width: 150%;
-  border-radius: 5px;
-  border: none;
+  background-color: rgb(229, 233, 235);
 }
-.contact-us .container .form-container button {
-  width: 100px;
-  height: 45px;
-  margin-top: 25px;
-  margin-right: 50px;
+.contact .contactUs .contactUs-right .formBox button {
+  width: 30%;
+  height: 30px;
   border-radius: 10px;
   border: none;
-  background: blue;
-  color: white;
+  background-color: rgb(158, 237, 237);
+}
+
+textarea {
+  width: 99.5%;
 }
 
 .location h1 {
@@ -305,32 +282,23 @@ body {
 }
 
 header {
-  height: 480px;
-  background-image: url(/image/img-of-content/header-for-contact.jpg);
+  background-image: url(/image/img-of-content/header-check-health.jpg);
   background-size: cover;
+  height: 400px;
 }
-@media screen and (max-width: ) {
-  header {
-    height: 230px;
-  }
+header .image {
+  background-color: rgba(14, 59, 98, 0.867);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
 }
-
-.working-hour {
-  margin-top: 50px;
-  margin-bottom: 50px;
-  margin-left: 65px;
-  margin-right: 50px;
+header .image p {
+  margin-bottom: -100px;
+  font-size: 23px;
 }
-.working-hour h1 {
-  text-align: center;
-  margin-bottom: 50px;
-  color: blue;
-}
-.working-hour p, .working-hour li {
-  font-size: 20px;
-}
-@media screen and (max-width: ) {
-  .working-hour p, .working-hour li {
-    font-size: 13px;
-  }
+header .image b {
+  font-size: 70px;
 }/*# sourceMappingURL=contact.css.map */
