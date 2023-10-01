@@ -179,7 +179,7 @@ footer .footer-container .footer-right .contact-footer {
   align-items: center;
 }
 footer .footer-container .footer-right .contact-footer i {
-  color: blue;
+  color: rgba(36, 36, 238, 0.897);
   font-size: 28px;
   text-align: center;
   line-height: 42px;
@@ -201,6 +201,10 @@ header {
   margin: 0;
   list-style-type: none;
   font-family: sans-serif;
+}
+
+body {
+  background-color: rgb(241, 248, 249);
 }
 
 .Pictures-clinic {
@@ -249,7 +253,7 @@ header {
   width: 100%;
 }
 .table-container h1 {
-  color: blue;
+  color: rgba(36, 36, 238, 0.897);
 }
 .table-container .color {
   color: red;

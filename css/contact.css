@@ -179,7 +179,7 @@ footer .footer-container .footer-right .contact-footer {
   align-items: center;
 }
 footer .footer-container .footer-right .contact-footer i {
-  color: blue;
+  color: rgba(36, 36, 238, 0.897);
   font-size: 28px;
   text-align: center;
   line-height: 42px;
@@ -201,6 +201,10 @@ header {
   margin: 0;
   list-style-type: none;
   font-family: sans-serif;
+}
+
+body {
+  background-color: rgb(241, 248, 249);
 }
 
 .contact-us {
@@ -230,7 +234,7 @@ header {
   margin-left: 50px;
   border-radius: 10px;
   border: none;
-  background: blue;
+  background: rgba(36, 36, 238, 0.897);
   color: white;
 }
 .contact-us .check-schedule button a {
@@ -289,7 +293,7 @@ header {
   margin-right: 50px;
   border-radius: 10px;
   border: none;
-  background: blue;
+  background: rgba(36, 36, 238, 0.897);
   color: white;
 }
 
@@ -297,6 +301,7 @@ header {
   margin-top: 50px;
   margin-bottom: 60px;
   text-align: center;
+  color: rgba(36, 36, 238, 0.897);
 }
 
 header {
@@ -319,7 +324,7 @@ header {
 .working-hour h1 {
   text-align: center;
   margin-bottom: 50px;
-  color: blue;
+  color: rgba(36, 36, 238, 0.897);
 }
 .working-hour p, .working-hour li {
   font-size: 20px;
