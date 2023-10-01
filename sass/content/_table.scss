@@ -47,7 +47,6 @@
     flex-direction: column;
     margin-top: -30px;
     width: 100%;
-
     h1 {
         color: $seconaryColor;
     }
@@ -55,6 +54,7 @@
     .color {
         color: $tablecolor;
     }
+    background: rgb(49, 49, 81);
 }
 
 table {
@@ -63,11 +63,11 @@ table {
     margin-top: 20px;
     height: 60vh;
     width: 90%;
-    background: $mainColor;
+    
 
     thead {
         height: 10vh;
-        background: $primaryColor;
+    
     }
 
     th,

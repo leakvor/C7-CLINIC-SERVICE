@@ -200,33 +200,91 @@ header {
   padding: 0;
   margin: 0;
   list-style-type: none;
-  font-family: sans-serif;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 body {
   background-color: rgb(241, 248, 249);
 }
 
+<<<<<<< HEAD
 .contact-us {
+=======
+.contact {
+>>>>>>> ad46d0652f67ab3a8df3a4204124e1590d1685c2
   display: flex;
-  flex-direction: column;
   align-items: center;
+  justify-content: center;
+  margin-top: -100px;
 }
-.contact-us h1 {
-  margin-top: 50px;
-  margin-bottom: 50px;
+.contact h2 {
+  align-self: center;
 }
+<<<<<<< HEAD
 @media screen and (max-width: ) {
   .contact-us h1 {
     margin-top: 100px;
+=======
+.contact .contactUs {
+  width: 70%;
+  display: flex;
+  background: rgba(14, 59, 98, 0.867);
+  color: aliceblue;
+  box-shadow: 1px 5px 2px 0px rgb(220, 219, 219);
+}
+@media screen and (max-width: 1024px) {
+  .contact .contactUs {
+    width: 85%;
+>>>>>>> ad46d0652f67ab3a8df3a4204124e1590d1685c2
   }
 }
-.contact-us .check-schedule {
-  width: 100%;
-  height: 490px;
-  background-image: url(/image/img-of-content/form.jpg);
-  background-size: cover;
+@media screen and (max-width: 730px) {
+  .contact .contactUs {
+    flex-direction: column;
+  }
 }
+.contact .contactUs .contactUs-left {
+  flex: 0.7;
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+  gap: 30px;
+}
+.contact .contactUs .contactUs-left h2 {
+  margin-bottom: 20px;
+}
+@media screen and (max-width: 1024px) {
+  .contact .contactUs .contactUs-left h2 {
+    font-size: 22px;
+    margin-top: 10px;
+  }
+}
+.contact .contactUs .contactUs-right {
+  flex: 1;
+  margin-top: 60px;
+}
+@media screen and (max-width: 1024px) {
+  .contact .contactUs .contactUs-right {
+    margin-top: 75px;
+  }
+}
+@media screen and (max-width: 730px) {
+  .contact .contactUs .contactUs-right {
+    margin-top: 30px;
+  }
+}
+.contact .contactUs .contactUs-right h3 {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+.contact .contactUs .contactUs-right .formBox {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+<<<<<<< HEAD
 .contact-us .check-schedule button {
   width: 150px;
   height: 45px;
@@ -244,14 +302,24 @@ body {
   .contact-us .check-schedule button {
     padding: 5px;
     margin-bottom: 10px;
+=======
+.contact .contactUs .contactUs-right .formBox .row50 {
+  display: flex;
+  gap: 30px;
+}
+@media screen and (max-width: 1024px) {
+  .contact .contactUs .contactUs-right .formBox .row50 {
+    gap: 10px;
+>>>>>>> ad46d0652f67ab3a8df3a4204124e1590d1685c2
   }
 }
-.contact-us .container {
+.contact .contactUs .contactUs-right .formBox .row50 .inputBox {
   display: flex;
   flex-direction: column;
-  align-items: end;
-  margin-right: 50px;
+  width: 50%;
+  border-bottom: 10px;
 }
+<<<<<<< HEAD
 @media screen and (max-width: ) {
   .contact-us .container {
     margin-top: 20px;
@@ -281,46 +349,78 @@ body {
 }
 .contact-us .container .form-container form input {
   margin-top: 25px;
+=======
+.contact .contactUs .contactUs-right .formBox .row50 .inputBox input {
+>>>>>>> ad46d0652f67ab3a8df3a4204124e1590d1685c2
   padding: 10px;
-  width: 150%;
-  border-radius: 5px;
-  border: none;
+  background-color: rgb(229, 233, 235);
 }
-.contact-us .container .form-container button {
-  width: 100px;
-  height: 45px;
-  margin-top: 25px;
-  margin-right: 50px;
+@media screen and (max-width: 1024px) {
+  .contact .contactUs .contactUs-right .formBox .row50 .inputBox input {
+    padding: 6px;
+  }
+}
+.contact .contactUs .contactUs-right .formBox button {
+  width: 30%;
+  height: 30px;
   border-radius: 10px;
   border: none;
+<<<<<<< HEAD
   background: rgba(36, 36, 238, 0.897);
   color: white;
+=======
+  background-color: rgb(158, 237, 237);
+}
+
+textarea {
+  width: 99.5%;
+>>>>>>> ad46d0652f67ab3a8df3a4204124e1590d1685c2
 }
 
 .location h1 {
   margin-top: 50px;
   margin-bottom: 60px;
   text-align: center;
+<<<<<<< HEAD
   color: rgba(36, 36, 238, 0.897);
+=======
+  color: blue;
+>>>>>>> ad46d0652f67ab3a8df3a4204124e1590d1685c2
 }
 
 header {
-  height: 480px;
-  background-image: url(/image/img-of-content/header-for-contact.jpg);
+  background-image: url(/image/img-of-content/header-check-health.jpg);
   background-size: cover;
+  height: 400px;
 }
+<<<<<<< HEAD
 @media screen and (max-width: ) {
   header {
     height: 230px;
+=======
+header .image {
+  background-color: rgba(14, 59, 98, 0.867);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+header .image p {
+  margin-bottom: -100px;
+  font-size: 23px;
+}
+@media screen and (max-width: 730px) {
+  header .image p {
+    display: none;
+>>>>>>> ad46d0652f67ab3a8df3a4204124e1590d1685c2
   }
 }
-
-.working-hour {
-  margin-top: 50px;
-  margin-bottom: 50px;
-  margin-left: 65px;
-  margin-right: 50px;
+header .image b {
+  font-size: 70px;
 }
+<<<<<<< HEAD
 .working-hour h1 {
   text-align: center;
   margin-bottom: 50px;
@@ -332,5 +432,15 @@ header {
 @media screen and (max-width: ) {
   .working-hour p, .working-hour li {
     font-size: 13px;
+=======
+@media screen and (max-width: 1024px) {
+  header .image b {
+    font-size: 50px;
+  }
+}
+@media screen and (max-width: 730px) {
+  header .image b {
+    font-size: 30px;
+>>>>>>> ad46d0652f67ab3a8df3a4204124e1590d1685c2
   }
 }/*# sourceMappingURL=contact.css.map */

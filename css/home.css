@@ -200,7 +200,7 @@ header {
   padding: 0;
   margin: 0;
   list-style-type: none;
-  font-family: sans-serif;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 body {
@@ -380,7 +380,11 @@ body {
 .feed-back form button {
   padding: 10px 0;
   color: white;
+<<<<<<< HEAD
   background-color: rgba(36, 36, 238, 0.897);
+=======
+  background-color: blue;
+>>>>>>> ad46d0652f67ab3a8df3a4204124e1590d1685c2
   border: 1px solid white;
   width: 100%;
   cursor: pointer;
