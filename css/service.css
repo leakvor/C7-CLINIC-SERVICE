@@ -1,5 +1,4 @@
 nav {
-  background-color: rgb(171, 215, 239);
   display: flex;
   justify-content: space-between;
 }
@@ -8,16 +7,11 @@ nav .nav-left {
   display: flex;
   justify-content: start;
   align-items: center;
-  margin-left: 50px;
 }
 @media screen and (max-width: 1024px) {
   nav .nav-left {
     flex: 0.5;
   }
-}
-nav .nav-left img {
-  height: 60px;
-  margin-top: 15px;
 }
 nav .nav-right {
   flex: 1;

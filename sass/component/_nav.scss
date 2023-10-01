@@ -3,23 +3,19 @@
 @import '../mixins/responsive';
 
 nav {
-    background-color: rgb(171, 215, 239);
     display: flex;
     justify-content: space-between;
-    
     .nav-left {
         flex: 1;
         display: flex;
         justify-content: start;
         align-items: center;
-        margin-left: $mainMargin;
         @include responsive(Laptop){
             flex: 0.5;
         }
 
         img {
-            height: 60px;
-            margin-top: 15px;
+          
         }
 
     }
